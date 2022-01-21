@@ -2,41 +2,86 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="/css/style.css" />
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
-    <div class="wraper-devise">
-      <header class="header-page">
-        <div class="header-page__user-nav">
-          <a class="user-nav__link-logo" href="https://htmlacademy.ru">
-            <img class="logo" src="" alt="" />
-          </a>
-          <form
-            class="search"
-            action="https://echo.htmlacademy.ru/"
-            method="get"
-          >
-            <input
-              class="search-field"
-              type="search"
-              name="search-value"
-              placeholder="Текст поиска"
-            />
-            <button class="search-btn" type="submit">Найти</button>
-          </form>
-          <ul class="user-nav__list">
-            <li class="user-nav__item">
-              <a class="user-nav_item-link login" href="#">Войти</a>
+    <header class="header-page">
+      <div class="user-nav">
+        <a class="user-nav__link-logo" href="https://htmlacademy.ru">
+          <img class="logo" src="" alt="" />
+        </a>
+        <form
+          class="user-nav__search"
+          action="https://echo.htmlacademy.ru/"
+          method="get"
+        >
+          <input
+            class="search-field"
+            type="search"
+            name="search-value"
+            placeholder="Текст поиска"
+          />
+          <button class="search-btn" type="submit">Найти</button>
+        </form>
+        <ul class="user-nav__list">
+          <li class="user-nav__item">
+            <a class="user-nav_item-link icon-login" href="#">Войти</a>
+          </li>
+          <li class="user-nav__item">
+            <a class="user-nav_item-link icon-compare" href="#">Сравнить</a>
+          </li>
+          <li class="user-nav__item">
+            <a class="user-nav_item-link icon-basket" href="#">Корзина</a>
+          </li>
+        </ul>
+      </div>
+      <div class="navigation-page">
+        <div class="catalog">
+          <a class="catalog-link" href="catalog.html">каталог товаров</a>
+          <div class="catalog-popup">
+            <ul class="popup-list">
+              <h2 class="visualy-hidden">Разное</h2>
+              <li class="popup-item">
+                <a class="popup-item" href="catalog.html">Виртуальная реальность</a>
+              </li>
+              <li class="popup-item">
+                <a class="popup-item" href="catalog.html">Моноподы для cелфи</a>
+              </li>
+              <li class="popup-item">
+                <a class="popup-item" href="catalog.html">Экшн-камеры</a>
+              </li>
+            </ul>
+            <ul class="popup-list">
+              <h2 class="visualy-hidden">Умные часы, браслеты</h2>
+              <li class="popup-item">
+                <a class="popup-item" href="catalog.html">Фитнес-браслеты</a>
+              </li>
+              <li class="popup-item">
+                <a class="popup-item" href="catalog.html">Умные часы</a>
+              </li>
+            </ul>
+            <ul class="popup-list">
+              <h2 class="visualy-hidden">Квадракоптеры</h2>
+              <li class="popup-item">
+                <a class="popup-item" href="catalog.html">Фитнес-браслеты</a>
+              </li>
+          </div>
+        </div>
+        <nav class="nav-page">
+          <ul class="nav-page__list">
+            <li class="nav-page__item">
+              <a class="nav-page__link" href="#">доставка</a>
             </li>
-            <li class="user-nav__item">
-              <a class="user-nav_item-link compare" href="#">Сравнить</a>
+            <li class="nav-page__item">
+              <a class="nav-page__link" href="#">гарантия</a>
             </li>
-            <li class="user-nav__item">
-              <a class="user-nav_item-link basket" href="#">Корзина</a>
+            <li class="nav-page__item">
+              <a class="nav-page__link" href="#">контакты</a>
             </li>
           </ul>
-        </div>
-      </header>
-    </div>
+        </nav>
+      </div>
+    </header>
   </body>
 </html>
