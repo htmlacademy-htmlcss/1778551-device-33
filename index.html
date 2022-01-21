@@ -6,82 +6,106 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
-    <header class="header-page">
-      <div class="user-nav">
-        <a class="user-nav__link-logo" href="https://htmlacademy.ru">
-          <img class="logo" src="" alt="" />
-        </a>
-        <form
-          class="user-nav__search"
-          action="https://echo.htmlacademy.ru/"
-          method="get"
-        >
-          <input
-            class="search-field"
-            type="search"
-            name="search-value"
-            placeholder="Текст поиска"
-          />
-          <button class="search-btn" type="submit">Найти</button>
-        </form>
-        <ul class="user-nav__list">
-          <li class="user-nav__item">
-            <a class="user-nav_item-link icon-login" href="#">Войти</a>
-          </li>
-          <li class="user-nav__item">
-            <a class="user-nav_item-link icon-compare" href="#">Сравнить</a>
-          </li>
-          <li class="user-nav__item">
-            <a class="user-nav_item-link icon-basket" href="#">Корзина</a>
-          </li>
-        </ul>
-      </div>
-      <div class="navigation-page">
-        <div class="catalog">
-          <a class="catalog-link" href="catalog.html">каталог товаров</a>
-          <div class="catalog-popup">
-            <ul class="popup-list">
-              <h2 class="visualy-hidden">Разное</h2>
-              <li class="popup-item">
-                <a class="popup-item" href="catalog.html">Виртуальная реальность</a>
-              </li>
-              <li class="popup-item">
-                <a class="popup-item" href="catalog.html">Моноподы для cелфи</a>
-              </li>
-              <li class="popup-item">
-                <a class="popup-item" href="catalog.html">Экшн-камеры</a>
-              </li>
-            </ul>
-            <ul class="popup-list">
-              <h2 class="visualy-hidden">Умные часы, браслеты</h2>
-              <li class="popup-item">
-                <a class="popup-item" href="catalog.html">Фитнес-браслеты</a>
-              </li>
-              <li class="popup-item">
-                <a class="popup-item" href="catalog.html">Умные часы</a>
-              </li>
-            </ul>
-            <ul class="popup-list">
-              <h2 class="visualy-hidden">Квадракоптеры</h2>
-              <li class="popup-item">
-                <a class="popup-item" href="catalog.html">Фитнес-браслеты</a>
-              </li>
-          </div>
-        </div>
-        <nav class="nav-page">
-          <ul class="nav-page__list">
-            <li class="nav-page__item">
-              <a class="nav-page__link" href="#">доставка</a>
+    <div class="wrapper-page">
+      <h1 class="visuali-hidden">Девайс</h1>
+      <header class="header-page">
+        <div class="user-nav">
+          <a class="user-nav__link-logo" href="https://htmlacademy.ru">
+            <img class="logo" src="" alt="" />
+          </a>
+          <form
+            class="user-nav__search"
+            action="https://echo.htmlacademy.ru/"
+            method="get"
+          >
+            <input
+              class="search-field"
+              type="search"
+              name="search-value"
+              placeholder="Текст поиска"
+            />
+            <button class="search-btn" type="submit">Найти</button>
+          </form>
+          <ul class="user-nav__list">
+            <li class="user-nav__item">
+              <a class="user-nav_item-link icon-login" href="#">Войти</a>
             </li>
-            <li class="nav-page__item">
-              <a class="nav-page__link" href="#">гарантия</a>
+            <li class="user-nav__item">
+              <a class="user-nav_item-link icon-compare" href="#">Сравнить</a>
             </li>
-            <li class="nav-page__item">
-              <a class="nav-page__link" href="#">контакты</a>
+            <li class="user-nav__item">
+              <a class="user-nav_item-link icon-basket" href="#">Корзина</a>
             </li>
           </ul>
-        </nav>
-      </div>
-    </header>
+        </div>
+        <div class="page-nav">
+          <div class="catalog">
+            <a class="catalog-link" href="catalog.html">каталог товаров</a>
+            <div class="catalog-popup">
+              <h2 class="visualy-hidden">каталог</h2>
+              <div class="other">
+                <h3 class="visualy-hidden">разное</h3>
+                <ul class="popup-list">
+                  <li class="popup-item">
+                    <a class="popup-item" href="catalog.html"
+                      >Виртуальная реальность</a
+                    >
+                  </li>
+                  <li class="popup-item">
+                    <a class="popup-item" href="catalog.html"
+                      >Моноподы для cелфи</a
+                    >
+                  </li>
+                  <li class="popup-item">
+                    <a class="popup-item" href="catalog.html">Экшн-камеры</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="clock">
+                <h3 class="visualy-hidden">Умные часы, браслеты</h3>
+                <ul class="popup-list">
+                  <li class="popup-item">
+                    <a class="popup-item" href="catalog.html"
+                      >Фитнес-браслеты</a
+                    >
+                  </li>
+                  <li class="popup-item">
+                    <a class="popup-item" href="catalog.html">Умные часы</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="quadcopters">
+                <h3 class="visualy-hidden">Квадракоптеры</h3>
+                <ul class="popup-list">
+                  <li class="popup-item">
+                    <a class="popup-item" href="catalog.html"
+                      >Фитнес-браслеты</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <nav class="nav-page">
+            <ul class="nav-page__list">
+              <li class="nav-page__item">
+                <a class="nav-page__link" href="#">доставка</a>
+              </li>
+              <li class="nav-page__item">
+                <a class="nav-page__link" href="#">гарантия</a>
+              </li>
+              <li class="nav-page__item">
+                <a class="nav-page__link" href="#">контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="main-page">
+        <section class="slider">
+          <h2 class="visualy-hidden">Слайдер</h2>
+        </section>
+      </main>
+    </div>
   </body>
 </html>
