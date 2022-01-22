@@ -103,6 +103,7 @@
               <li class="slide-item slide-1">
                 <a class="slide-link" href="#">
                   <img class="slide" src="" alt="фото-1" />
+                  <label for="slide1"></label>
                 </a>
                 <div class="slids-desk">
                   <h2 class="slide-title">
@@ -114,11 +115,11 @@
                   </p>
                 </div>
                 <span class="counter">01</span>
-                <input checked type="radio" name="slider" id="slide-1" />
               </li>
               <li class="slide-item slide-2">
                 <a class="slide-link" href="#">
                   <img class="slide" src="" alt="фото-2" />
+                  <label for="slide2"></label>
                 </a>
                 <div class="slids-desk">
                   <h2 class="slide-title">
@@ -130,11 +131,11 @@
                   </p>
                 </div>
                 <span class="counter">02</span>
-                <input type="radio" name="slider" id="slide-2" />
               </li>
               <li class="slide-item slide-3">
                 <a class="slide-link" href="#">
-                  <img class="slide" src="" alt="фото-2" />
+                  <img class="slide" src="" alt="фото-3" />
+                  <label for="slide3"></label>
                 </a>
                 <div class="slids-desk">
                   <h2 class="slide-title">
@@ -146,14 +147,29 @@
                   </p>
                 </div>
                 <span class="counter">03</span>
-                <input type="radio" name="slider" id="slide-3" />
               </li>
             </ol>
             <div class="control">
               <a class="btn-link button" href="#">подробнее</a>
-              <label for="slide1"></label>
-              <label for="slide2"></label>
-              <label for="slide3"></label>
+              <input
+                class="visualy-hidden"
+                checked
+                type="radio"
+                name="slider"
+                id="slide-1"
+              />
+              <input
+                class="visualy-hidden"
+                type="radio"
+                name="slider"
+                id="slide-2"
+              />
+              <input
+                class="visualy-hidden"
+                type="radio"
+                name="slider"
+                id="slide-3"
+              />
             </div>
             <ul class="characteristic-range-item">
               <li class="characteristic-range-list">
@@ -263,13 +279,13 @@
           </div>
         </section>
         <section class="details">
-          <div class="about">
-            <h2 class="about-title">О нас</h2>
-            <p class="about-text">
+          <div class="about details-item">
+            <h2 class="details-title">О нас</h2>
+            <p class="details-text">
               Огромный выбор гаджетов не оставит равнодушным гика, который есть
               в каждом из нас.
             </p>
-            <p class="about-text">
+            <p class="details-text">
               Мы можем доставить ваш товар в самые отдалённые уголки России
               транспортными компаниями:
             </p>
@@ -284,17 +300,17 @@
                 <h3 class="about-link">ТоксБерри</h3>
               </li>
             </ul>
-            <a class="detail-link button" href="#">Подробнее о нас</a>
+            <a class="details-link button" href="#">Подробнее о нас</a>
           </div>
-          <div class="contacts">
-            <h2 class="about-title">Контакты</h2>
-            <p class="about-text">
+          <div class="contacts details-item">
+            <h2 class="details-title">Контакты</h2>
+            <p class="details-text">
               Вы можете забрать товар сами, заехав в наш офис. Заодно сможете
               проверить работоспособность покупки.
             </p>
             <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
             <address class="contacts-adress">
-              <p class="about-text">
+              <p class="details-text">
                 Санкт-Петербург, набережная реки Карповки, 5, литера П.
               </p>
               <a
@@ -308,7 +324,7 @@
               <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
               <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
             </ul>
-            <a class="detail-link button" href="#">Напишите нам</a>
+            <a class="details-link button" href="#">Напишите нам</a>
           </div>
         </section>
         <section class="important-news">
