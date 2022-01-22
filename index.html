@@ -9,9 +9,9 @@
     <div class="wrapper-page">
       <h1 class="visualy-hidden">Девайс</h1>
       <header class="header-page">
-        <div class="user-nav">
-          <a class="user-nav__link-logo" href="index">
-            <img class="logo" src="" alt="" />
+        <div class="user-nav-container">
+          <a class="user-nav__link-logo" href="index.html">
+            <img class="logo" src="" alt="Логотип" />
           </a>
           <form
             class="user-nav__search"
@@ -38,7 +38,7 @@
             </li>
           </ul>
         </div>
-        <div class="page-nav">
+        <div class="page-nav-container">
           <div class="catalog">
             <a class="catalog-link" href="catalog.html">каталог товаров</a>
             <div class="catalog-group">
@@ -93,9 +93,6 @@
         <section class="slider">
           <h2 class="visualy-hidden">Слайдер</h2>
           <div class="wrapper-slider">
-            <input checked type="radio" name="slider" id="slide-1" />
-            <input type="radio" name="slider" id="slide-2" />
-            <input type="radio" name="slider" id="slide-3" />
             <button class="slider-button slider-prev" type="button">
               <span class="visually-hidden">назад</span>
             </button>
@@ -103,51 +100,71 @@
               <span class="visually-hidden">вперед</span>
             </button>
             <ol class="slids-list">
-              <li class="slide-item">
+              <li class="slide-item slide-1">
                 <a class="slide-link" href="#">
                   <img class="slide" src="" alt="фото-1" />
                 </a>
+                <div class="slids-desk">
+                  <h2 class="slide-title">
+                    Порхает как бабочка, жалит как пчела!
+                  </h2>
+                  <p class="slide-desk">
+                    Этот обычный, на первый взгляд, квадрокоптер оснащен мощным
+                    лазером, замаскированным под стандартную камеру.
+                  </p>
+                </div>
+                <span class="counter">01</span>
+                <input checked type="radio" name="slider" id="slide-1" />
               </li>
-              <li class="slide-item">
+              <li class="slide-item slide-2">
                 <a class="slide-link" href="#">
                   <img class="slide" src="" alt="фото-2" />
                 </a>
+                <div class="slids-desk">
+                  <h2 class="slide-title">
+                    Порхает как бабочка, жалит как пчела!
+                  </h2>
+                  <p class="slide-desk">
+                    Этот обычный, на первый взгляд, квадрокоптер оснащен мощным
+                    лазером, замаскированным под стандартную камеру.
+                  </p>
+                </div>
+                <span class="counter">02</span>
+                <input type="radio" name="slider" id="slide-2" />
               </li>
-              <li class="slide-item">
+              <li class="slide-item slide-3">
                 <a class="slide-link" href="#">
-                  <img class="slide" src="" alt="фото-3" />
+                  <img class="slide" src="" alt="фото-2" />
                 </a>
+                <div class="slids-desk">
+                  <h2 class="slide-title">
+                    Порхает как бабочка, жалит как пчела!
+                  </h2>
+                  <p class="slide-desk">
+                    Этот обычный, на первый взгляд, квадрокоптер оснащен мощным
+                    лазером, замаскированным под стандартную камеру.
+                  </p>
+                </div>
+                <span class="counter">03</span>
+                <input type="radio" name="slider" id="slide-3" />
               </li>
             </ol>
-            <div class="slider-info">
-              <div class="slider-desk">
-                <strong class="slider-title"
-                  >Порхает как бабочка, жалит как пчела!</strong
-                >
-                <p class="slider-text">
-                  Этот обычный, на первый взгляд, квадрокоптер оснащен мощным
-                  лазером, замаскированным под стандартную камеру.
-                </p>
-              </div>
-              <a class="btn-link" href="#">подробнее</a>
-              <div class="controls">
-                <label for="slide1"></label>
-                <label for="slide2"></label>
-                <label for="slide3"></label>
-              </div>
-              <div class="characteristic">
-                <ul class="characteristic-range-item">
-                  <li class="characteristic-range-list">
-                    <span>800 м</span>
-                    <p>Дальность полета</p>
-                  </li>
-                  <li class="characteristic-range-list">
-                    <span>50 м</span>
-                    <p>Радиус поражения</p>
-                  </li>
-                </ul>
-              </div>
+            <div class="control">
+              <a class="btn-link button" href="#">подробнее</a>
+              <label for="slide1"></label>
+              <label for="slide2"></label>
+              <label for="slide3"></label>
             </div>
+            <ul class="characteristic-range-item">
+              <li class="characteristic-range-list">
+                <span>800 м</span>
+                <span>Дальность полета</span>
+              </li>
+              <li class="characteristic-range-list">
+                <span>50 м</span>
+                <span>Радиус поражения</span>
+              </li>
+            </ul>
           </div>
         </section>
         <section class="category">
