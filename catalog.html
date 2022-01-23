@@ -95,7 +95,180 @@
           </nav>
         </div>
       </header>
-      <main class="main-inner"></main>
+      <main class="main-inner">
+        <h1 class="visualy-hidden">Каталог</h1>
+        <header class="header-inner">
+          <h2 class="header-inner-title">Моноподы для селфи</h2>
+          <ul class="breadcrumbs-list">
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="index.html">Главная</a>
+            </li>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="catalog.html"
+                >Каталог товаров</a
+              >
+            </li>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="#">Моноподы для селфи</a>
+            </li>
+          </ul>
+        </header>
+        <section class="catalog-product">
+          <h2 class="visuali-hidden">Список товаров с фильтрами</h2>
+          <form
+            class="catalog-filter"
+            action="https://echo.htmlacademy.ru/"
+            method="post"
+            oninput="pricecountoutput.value=pricecount.value"
+          >
+            <legend class="catalog-filter-title">Фильтр</legend>
+            <fieldset class="price-control">
+              <legend class="catalog-filter-title">Стоимость</legend>
+              <label for="pricecount"></label>
+              <input
+                type="range"
+                id="pricecount"
+                name="pricecount"
+                min="0"
+                max="5000"
+                step="1"
+              />
+              <span class="label-range">от 1</span>
+              <span class="label-range">до 5000</span>
+            </fieldset>
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Цвет</legend>
+              <ul class="catalog-filter-list">
+                <li class="catalog-item">
+                  <label class="filter-control">
+                    <input
+                      class="control-input"
+                      type="checkbox"
+                      name="black"
+                      checked
+                    />
+                    Черный
+                  </label>
+                </li>
+                <li class="catalog-item">
+                  <label class="filter-control">
+                    <input
+                      class="control-input"
+                      type="checkbox"
+                      name="white"
+                      checked
+                    />
+                    Белый
+                  </label>
+                </li>
+                <li class="catalog-item">
+                  <label class="filter-control">
+                    <input class="control-input" type="checkbox" name="blue" />
+                    Синий
+                  </label>
+                </li>
+                <li class="catalog-item">
+                  <label class="filter-control">
+                    <input class="control-input" type="checkbox" name="red" />
+                    Красный
+                  </label>
+                </li>
+                <li class="catalog-item">
+                  <label class="filter-control">
+                    <input
+                      class="control-input"
+                      type="checkbox"
+                      name="purple"
+                    />
+                    Фиолетовый
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Bluetooth</legend>
+              <ul class="catalog-filter-list">
+                <li class="catalog-filter-item">
+                  <label class="filter-control">
+                    <input
+                      class="control-input"
+                      type="radio"
+                      name="bluetooth-group"
+                      value="yes"
+                      checked
+                    />
+                    Есть
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="filter-control">
+                    <input
+                      class="control-input"
+                      type="radio"
+                      name="bluetooth-group"
+                      value="no"
+                    />
+                    Нет
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="button" type="submit">Показать</button>
+          </form>
+          <div class="products">
+            <header class="header-products">
+              <a href="#" class="catalog-sort-link">Сортировка</a>
+              <select class="select-control" aria-label="Популярные">
+                <option value="popular">Популярные</option>
+                <option value="quadrocopters">Квадракоптеры</option>
+                <option value="clock">Часы</option>
+              </select>
+              <img class="catalog-popular-up" src="" alt="Сначала дорогие" />
+              <img class="catalog-popular-down" src="" alt="Сначала дешевые" />
+            </header>
+            <ul class="product-list">
+              <li class="product-item">
+                <img class="img-product" src="" alt="Сэлфи палка" />
+              </li>
+              <li class="product-item">
+                <img class="img-product" src="" alt="Сэлфи палка" />
+              </li>
+              <li class="product-item">
+                <img class="img-product" src="" alt="Сэлфи палка" />
+              </li>
+              <li class="product-item">
+                <img class="img-product" src="" alt="Сэлфи палка" />
+              </li>
+            </ul>
+            <a class="btn-still" href="#">Еще</a>
+            <div class="nav-products">
+              <button class="btn-back" type="button">
+                <span class="btn-back-text">Назад</span>
+              </button>
+              <ul class="products-breadcrumbs-list">
+                <li class="products-breadcrumbs-item">
+                  <a class="products-breadcrumbs-link" href="#">1</a>
+                </li>
+                <li class="products-breadcrumbs-item">
+                  <a class="products-breadcrumbs-link" href="#">2</a>
+                </li>
+                <li class="products-breadcrumbs-item">
+                  <a class="products-breadcrumbs-link" href="#">3</a>
+                </li>
+                <li class="products-breadcrumbs-item">
+                  <a class="products-breadcrumbs-link" href="#">...</a>
+                </li>
+                <li class="products-breadcrumbs-item">
+                  <a class="products-breadcrumbs-link" href="#">15</a>
+                </li>
+              </ul>
+              <button class="btn-back" type="button">
+                <span class="btn-back-text">Вперед</span>
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
       <footer class="footer-page">
         <div class="footer-address-info decor-line">
           <a class="logo-link" href="https://up.htmlacademy.ru/">
@@ -154,7 +327,7 @@
               class="logo-image"
               src=""
               alt="Сайт разработчика
-            "
+              "
             />
           </a>
         </div>
