@@ -5,7 +5,7 @@
     <link rel="icon" href="./img/favicon/favicon.ico" />
     <link
       rel="icon"
-      vtype="image/png"
+      type="image/png"
       sizes="32x32"
       href="./img/favicon/favicon.png"
     />
@@ -14,86 +14,99 @@
   </head>
   <body>
     <div class="wrapper-page">
-      <h1 class="visualy-hidden">Девайс</h1>
+      <h1 class="visualy-hidden-title">Девайс</h1>
       <header class="header-page">
-        <div class="user-nav-container">
-          <a class="user-nav__link-logo" href="index.html">
-            <img class="logo" src="" alt="Логотип сайта Девайс" />
-          </a>
-          <form
-            class="user-nav__search"
-            action="https://echo.htmlacademy.ru/"
-            method="get"
-          >
-            <input
-              class="search-field"
-              type="search"
-              name="search-value"
-              placeholder="Текст поиска"
+        <div class="header-container">
+          <a class="header-container__link-logo" href="index.html">
+            <img
+              class="logo"
+              src="/img/content-image/logo-first.png"
+              width="145"
+              height="36"
+              alt="Логотип сайта Девайс"
             />
-            <button class="search-btn" type="submit">Найти</button>
-          </form>
-          <ul class="user-nav__list">
-            <li class="user-nav__item">
-              <a class="user-nav-item-link icon-login" href="#">Войти</a>
-            </li>
-            <li class="user-nav__item">
-              <a class="user-nav-item-link icon-compare" href="#">Сравнить</a>
-            </li>
-            <li class="user-nav__item">
-              <a class="user-nav-item-link icon-basket" href="#">Корзина</a>
-            </li>
-          </ul>
-        </div>
-        <div class="page-nav-container">
-          <div class="catalog">
-            <a class="catalog-link" href="catalog.html">каталог товаров</a>
-            <div class="catalog-group">
-              <ul class="other-list">
-                <li class="other-item">
-                  <a class="other-link" href="catalog.html"
-                    >Виртуальная реальность
-                  </a>
-                </li>
-                <li class="other-item">
-                  <a class="other-link" href="catalog.html"
-                    >Моноподы для cелфи
-                  </a>
-                </li>
-                <li class="other-item">
-                  <a class="other-link" href="catalog.html">Экшн-камеры</a>
-                </li>
-              </ul>
-              <ul class="clock-list">
-                <li class="clock-item">
-                  <a class="clock-link" href="catalog.html">Фитнес-браслеты</a>
-                </li>
-                <li class="clock-item">
-                  <a class="clock-link" href="catalog.html">Умные часы</a>
-                </li>
-              </ul>
-              <ul class="quadcopters-list">
-                <li class="quadcopters-item">
-                  <a class="quadcopters-link" href="catalog.html"
-                    >Фитнес-браслеты
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <nav class="nav-page">
-            <ul class="nav-page__list">
-              <li class="nav-page__item">
-                <a class="nav-page__link" href="#">доставка</a>
+          </a>
+          <div class="user-nav-container">
+            <form
+              class="user-nav__search"
+              action="https://echo.htmlacademy.ru/"
+              method="get"
+            >
+              <!-- <label class="name-search" for="search"> Текст поиска </label> -->
+              <input
+                class="search-field"
+                id="search"
+                type="search"
+                name="search-value"
+                placeholder="Текст поиска"
+                autocomplete="off"
+              />
+              <button class="search-btn" type="submit">Найти</button>
+            </form>
+            <ul class="user-nav__list">
+              <li class="user-nav__item">
+                <a class="user-nav-link icon-login" href="#">Войти</a>
               </li>
-              <li class="nav-page__item">
-                <a class="nav-page__link" href="#">гарантия</a>
+              <li class="user-nav__item icon-compare">
+                <a class="user-nav-link" href="#">Сравнить</a>
               </li>
-              <li class="nav-page__item">
-                <a class="nav-page__link" href="#">контакты</a>
+              <li class="user-nav__item icon-basket">
+                <a class="user-nav-link" href="#">Корзина</a>
               </li>
             </ul>
-          </nav>
+          </div>
+          <div class="page-nav-container">
+            <div class="catalog">
+              <a class="catalog-link" href="catalog.html">каталог товаров</a>
+              <div class="catalog-group">
+                <ul class="other-list">
+                  <li class="other-item">
+                    <a class="other-link" href="catalog.html"
+                      >Виртуальная реальность
+                    </a>
+                  </li>
+                  <li class="other-item">
+                    <a class="other-link" href="catalog.html"
+                      >Моноподы для cелфи
+                    </a>
+                  </li>
+                  <li class="other-item">
+                    <a class="other-link" href="catalog.html">Экшн-камеры</a>
+                  </li>
+                </ul>
+                <ul class="clock-list">
+                  <li class="clock-item">
+                    <a class="clock-link" href="catalog.html"
+                      >Фитнес-браслеты</a
+                    >
+                  </li>
+                  <li class="clock-item">
+                    <a class="clock-link" href="catalog.html">Умные часы</a>
+                  </li>
+                </ul>
+                <ul class="quadcopters-list">
+                  <li class="quadcopters-item">
+                    <a class="quadcopters-link" href="catalog.html"
+                      >Фитнес-браслеты
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <nav class="nav-page">
+              <ul class="nav-page__list">
+                <li class="nav-page__item">
+                  <a class="nav-page__link" href="#">доставка</a>
+                </li>
+                <li class="nav-page__item">
+                  <a class="nav-page__link" href="#">гарантия</a>
+                </li>
+                <li class="nav-page__item">
+                  <a class="nav-page__link" href="#">контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </header>
       <main class="main-page">
