@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px 0 10px;
+  box-sizing: content-box;
+}
+
+.wrapper-inner {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 16px;
+  line-height: 118%;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  color: #171616;
+}
+.main-inner {
+  flex: 1 1 auto;
+}
+
+.visualy-hidden {
+  display: none;
+}
+
+.visualy-hidden-title {
+  visibility: hidden;
+  height: 15px;
+}
+
+/* !!================================================HEADER ======START===============================*/
+.header-page {
+  width: 1160px;
+  margin: 40px auto 0;
+  min-height: 300px;
+  background: #ffe17f;
+}
+
+.header-container {
+  padding: 0 60px 0 60px;
+  margin: -22px auto;
+}
+.header-container__link-logo {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.user-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* !!====================================================================FORM-SEARCH */
+.user-nav__search {
+  display: flex;
+  width: 517px;
+  border: 2px solid #000000;
+  border-radius: 50px 50px 50px 50px;
+}
+
+.search-field {
+  width: 357px;
+  padding: 10px 56px;
+  border: none;
+  border-right: 2px solid #000000;
+  box-sizing: border-box;
+  border-radius: 50px 0px 0px 50px;
+  outline: none;
+  background: transparent;
+}
+
+.search-btn {
+  width: 160px;
+  border-left: 2px solid #000000;
+  border: none;
+  padding: 10px 56px;
+  box-sizing: border-box;
+  border-radius: 0px 50px 50px 0px;
+  background: transparent;
+}
+/* !!====================================================================FORM-SEARCH ==========finish*/
+
+/* !!====================================================================USER-NAV */
+.user-nav__list {
+  display: flex;
+}
+
+.user-nav__item:first-child {
+  margin-right: 176px;
+}
+.user-nav__item:nth-child(2) {
+  margin-right: 36px;
+}
+.icon-login {
+  background: url(../img/icon/header-user-nav/login.png);
+  padding-left: 26px;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.icon-compare {
+  background: url(../img/icon/header-user-nav/compare.png);
+  padding-left: 26px;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.icon-basket {
+  background: url(../img/icon/header-user-nav/basket-first.png);
+  padding-left: 26px;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.page-nav-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-page__list {
+  display: flex;
+}
