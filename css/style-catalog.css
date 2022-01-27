@@ -106,25 +106,18 @@ body {
 .user-nav__item:nth-child(2) {
   margin-right: 36px;
 }
-.icon-login {
-  background: url(../img/icon/header-user-nav/login.png);
-  padding-left: 26px;
-  background-position: left;
-  background-repeat: no-repeat;
+.icon-login::before {
+  content: "";
+  
+ 
 }
 
 .icon-compare {
-  background: url(../img/icon/header-user-nav/compare.png);
-  padding-left: 26px;
-  background-position: left;
-  background-repeat: no-repeat;
+  
 }
 
 .icon-basket {
-  background: url(../img/icon/header-user-nav/basket-first.png);
-  padding-left: 26px;
-  background-position: left;
-  background-repeat: no-repeat;
+  
 }
 
 .page-nav-container {
