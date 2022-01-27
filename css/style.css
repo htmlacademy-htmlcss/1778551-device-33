@@ -60,7 +60,7 @@ body {
   color: #171616;
   background: #ffffff;
 }
-.main-page {
+.main-index {
   flex: 1 1 auto;
 }
 
@@ -76,7 +76,7 @@ body {
 }
 
 /* !!================================================HEADER ======START===============================*/
-.header-page {
+.header-index {
   width: 1160px;
   margin: 40px auto 0;
   min-height: 300px;
@@ -287,4 +287,21 @@ body {
 
 .nav-page__item:nth-child(2) {
   margin-right: 45px;
+}
+
+/* TODO=======================PAGE-CATALOG======================PAGE-CATALOG=================PAGE-CATALOG */
+
+.wrapper-inner {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+/* !!================================================HEADER ======START===============================*/
+.header-inner-catalog {
+  width: 1160px;
+  margin: 40px auto 0;
+  min-height: 300px;
+  background: #ffe17f;
 }
