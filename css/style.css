@@ -120,6 +120,7 @@ body {
   box-sizing: border-box;
   border-radius: 50px 0px 0px 50px;
   background: transparent;
+  outline: none;
 }
 
 .user-nav__search::before {
@@ -143,7 +144,14 @@ body {
   font-size: 16px;
   line-height: 20px;
   border: solid 2px black;
+  outline: none;
 }
+/* .search-btn:disabled {
+  color: #000000;
+  border: 2px solid black; Состояние покоя
+  opacity: 0.3;
+  
+} */
 
 .search-btn:hover {
   background: #000000;
