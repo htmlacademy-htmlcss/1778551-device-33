@@ -4,6 +4,7 @@
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
+  outline: none;
 }
 
 .container {
@@ -123,13 +124,24 @@ body {
   outline: none;
 }
 
+.search-field:focus::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  border: 2px solid #af4fff;
+  top: -5px;
+  left: 352px;
+}
+
 .user-nav__search::before {
   content: "";
   display: block;
   position: absolute;
   width: 16px;
   height: 16px;
-  background: url(../img/icon/header-user-nav/search.png);
+  background: url(../img/icon/header-user-nav/search.svg);
   background-repeat: no-repeat;
   top: 12px;
   left: 16px;
@@ -146,6 +158,19 @@ body {
   border: solid 2px black;
   outline: none;
 }
+
+.search-btn:focus::before {
+  content: "";
+  position: absolute;
+  display: block;
+  position: absolute;
+  width: 166px;
+  height: 50px;
+  border: 2px solid #af4fff;
+  top: -5px;
+  left: 352px;
+}
+
 /* .search-btn:disabled {
   color: #000000;
   border: 2px solid black; Состояние покоя
@@ -181,6 +206,7 @@ body {
 }
 
 .user-nav-link {
+  outline: none;
   color: #000000;
 }
 
@@ -194,7 +220,7 @@ body {
   width: 15px;
   height: 12px;
   position: absolute;
-  background-image: url(../img/icon/header-user-nav/login.png);
+  background-image: url(../img/icon/header-user-nav/login.svg);
   background-repeat: no-repeat;
   top: 9px;
   left: -27px;
@@ -206,7 +232,7 @@ body {
   width: 10px;
   height: 12px;
   position: absolute;
-  background-image: url(../img/icon/header-user-nav/compare.png);
+  background-image: url(../img/icon/header-user-nav/compare.svg);
   background-repeat: no-repeat;
   top: 9px;
   left: -27px;
@@ -218,7 +244,7 @@ body {
   width: 31px;
   height: 21px;
   position: absolute;
-  background-image: url(../img/icon/header-user-nav/basket-counter.png);
+  background-image: url(../img/icon/header-user-nav/basket-counter.svg);
   background-repeat: no-repeat;
   top: 4.5px;
   left: -43px;
@@ -242,6 +268,7 @@ body {
 
 .catalog-link {
   margin-right: 20px;
+  outline: none;
 }
 
 .link {
@@ -271,8 +298,8 @@ body {
   height: 16px;
   background: url(../img/icon/header-user-nav/plus.svg);
   background-repeat: no-repeat;
-  top: 16px;
-  left: 15px;
+  top: 15px;
+  left: 15.5px;
 }
 
 .btn-catalog:hover {
@@ -287,6 +314,10 @@ body {
 .nav-page__list {
   display: flex;
   justify-content: flex-end;
+}
+
+.nav-page__link {
+  outline: none;
 }
 
 .nav-page__item:nth-child(1) {
