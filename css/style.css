@@ -143,7 +143,7 @@ body {
   position: absolute;
   width: 16px;
   height: 16px;
-  background: url(../img/icon/header-user-nav/search.svg);
+  background: url(./img/icon/header-user-nav/search.svg);
   background-repeat: no-repeat;
   top: 12px;
   left: 16px;
@@ -222,7 +222,7 @@ body {
   width: 15px;
   height: 12px;
   position: absolute;
-  background-image: url(../img/icon/header-user-nav/login.svg);
+  background-image: url(./img/icon/header-user-nav/login.svg);
   background-repeat: no-repeat;
   top: 9px;
   left: -27px;
@@ -234,7 +234,7 @@ body {
   width: 10px;
   height: 12px;
   position: absolute;
-  background-image: url(../img/icon/header-user-nav/compare.svg);
+  background-image: url(./img/icon/header-user-nav/compare.svg);
   background-repeat: no-repeat;
   top: 9px;
   left: -27px;
@@ -246,7 +246,7 @@ body {
   width: 31px;
   height: 21px;
   position: absolute;
-  background-image: url(../img/icon/header-user-nav/basket-counter.svg);
+  background-image: url(./img/icon/header-user-nav/basket-counter.svg);
   background-repeat: no-repeat;
   top: 4.5px;
   left: -43px;
