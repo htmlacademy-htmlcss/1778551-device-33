@@ -200,7 +200,13 @@ body {
 
 .user-nav__item {
   position: relative;
+  align-items: center;
 }
+
+.user-nav__item:focus-within {
+  border: 2px solid #af4fff;
+}
+
 .user-nav__item:first-child {
   margin-right: 198px;
 }
@@ -258,6 +264,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .nav-catalog {
@@ -280,7 +287,9 @@ body {
 }
 
 /* !!============================================================CATALOG-GROUP */
-
+.nav-catalog:focus-within {
+  border: 2px solid #af4fff;
+}
 .btn-catalog {
   width: 50px;
   height: 50px;
@@ -291,12 +300,8 @@ body {
   position: relative;
 }
 
-#popup-catalog {
-  position: absolute;
-  display: none;
-}
-
-#popup-catalog:checked + .catalog-group {
+.btn-catalog:focus-within + .catalog-group,
+.catalog-group:focus-within {
   display: block;
 }
 
@@ -304,12 +309,11 @@ body {
   width: 1160px;
   height: 180px;
   background: #ffe17f;
-  margin: 0 auto;
   padding: 0 60px 0 60px;
   display: none;
   position: absolute;
-  top: 208px;
-  left: 149px;
+  bottom: -180px;
+  left: -60px;
 }
 
 .catalog-group-inner {
@@ -323,6 +327,9 @@ body {
   margin-right: 30px;
 }
 
+.other-item:focus-within {
+  border: 2px solid #af4fff;
+}
 .other-link,
 .clock-link,
 .quadcopters-link {
@@ -357,16 +364,25 @@ body {
   justify-content: flex-end;
 }
 
-.nav-page__link {
-  outline: none;
-}
-
 .nav-page__item:nth-child(1) {
   margin-right: 51px;
 }
 
 .nav-page__item:nth-child(2) {
   margin-right: 45px;
+}
+
+.nav-page__item:focus-within {
+  border: 2px solid #af4fff;
+}
+
+.nav-page__link {
+  padding: 0 5px 0 5px;
+  outline: none;
+}
+
+.nav-page__item:active {
+  text-decoration: underline;
 }
 
 /* TODO=======================PAGE-CATALOG======================PAGE-CATALOG=================PAGE-CATALOG */
