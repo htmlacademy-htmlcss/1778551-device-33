@@ -35,25 +35,33 @@
                 action="https://echo.htmlacademy.ru/"
                 method="get"
               >
-                <input
-                  class="search-field"
-                  id="search"
-                  type="search"
-                  name="search-value"
-                  placeholder="Текст поиска"
-                  autocomplete="off"
-                />
-                <button class="search-btn" type="submit" disabled>Найти</button>
+                <label class="search-name" for="search">
+                  <input
+                    class="search-field"
+                    type="search"
+                    name="search-value"
+                    placeholder="Текст поиска"
+                    autocomplete="off"
+                    id="search"
+                  />
+                </label>
+                <button class="search-btn" type="submit">Найти</button>
               </form>
               <ul class="user-nav__list">
                 <li class="user-nav__item">
-                  <a class="user-nav-link icon-login" href="#">Войти</a>
+                  <a class="user-nav-link" href="#">
+                    <span class="icon-login">Войти</span>
+                  </a>
                 </li>
                 <li class="user-nav__item">
-                  <a class="user-nav-link icon-compare" href="#">Сравнить</a>
+                  <a class="user-nav-link" href="#">
+                    <span class="icon-compare">Сравнить</span>
+                  </a>
                 </li>
                 <li class="user-nav__item">
-                  <a class="user-nav-link icon-basket" href="#">Корзина</a>
+                  <a class="user-nav-link" href="#">
+                    <span class="icon-basket">Корзина</span>
+                  </a>
                 </li>
               </ul>
             </div>
