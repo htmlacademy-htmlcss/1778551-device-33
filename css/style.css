@@ -494,7 +494,7 @@ body {
   background: url(../img/category/quadrocopter.svg) no-repeat 50% 45px;
 }
 
-.background-block:hover {
+.category-item:hover .background-block {
   background: #ffc700;
 }
 
