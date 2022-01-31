@@ -429,9 +429,6 @@ body {
 
 .category-desk {
   font-family: Raleway;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 18px;
   line-height: 24px;
   letter-spacing: -0.02em;
   color: #000000;
@@ -439,7 +436,6 @@ body {
 }
 
 .background-block {
-  display: block;
   width: 160px;
   height: 160px;
   background: #ffe17f;
@@ -507,9 +503,7 @@ body {
 /*!!                     START-SERVICE */
 .service-btn-cheked {
   font-family: Raleway;
-  font-style: normal;
   font-weight: 800;
-  font-size: 18px;
   line-height: 21px;
   text-align: center;
   letter-spacing: 0.2em;
@@ -519,7 +513,6 @@ body {
 
 .service-title {
   font-family: Raleway;
-  font-style: normal;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
@@ -550,7 +543,6 @@ body {
 
 .order-delivery-text {
   font-family: Raleway;
-  font-style: normal;
   font-weight: 800;
   font-size: 20px;
   line-height: 23px;
@@ -584,7 +576,6 @@ body {
 
 .details-title {
   font-family: Raleway;
-  font-style: normal;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
@@ -611,18 +602,13 @@ body {
 .details-text-adress {
   font-family: Rubik;
   font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
   line-height: 30px;
   color: #444444;
 }
 
 .contacts-addres-link-phone {
   display: inline-block;
-  font-family: Rubik;
   font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
   line-height: 30px;
   color: #444444;
   text-decoration: underline;
@@ -633,7 +619,6 @@ body {
   font-family: Raleway;
   font-style: normal;
   font-weight: 800;
-  font-size: 18px;
   line-height: 21px;
   text-align: center;
   letter-spacing: 0.2em;
@@ -646,7 +631,6 @@ body {
 /* !!              START-IMPORTANT-NEWS */
 .mailing-title {
   font-family: Raleway;
-  font-style: normal;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
@@ -659,7 +643,6 @@ body {
 
 .subscription-btn {
   font-family: Raleway;
-  font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
@@ -768,8 +751,6 @@ body {
 
 .footer-link-phone {
   font-family: Rubik;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 20px;
   text-decoration-line: underline;
@@ -782,7 +763,6 @@ body {
 
 .header-inner-title {
   font-family: Raleway;
-  font-style: normal;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
@@ -797,7 +777,6 @@ body {
 
 .catalog-filter-title {
   font-family: Raleway;
-  font-style: normal;
   font-weight: 800;
   font-size: 16px;
   line-height: 19px;
@@ -821,7 +800,6 @@ body {
 
 .catalog-sort-link {
   font-family: Raleway;
-  font-style: normal;
   font-weight: 800;
   font-size: 16px;
   line-height: 19px;
