@@ -196,6 +196,7 @@ body {
 .user-nav-link {
   color: #000000;
   position: relative;
+  display: inline-block;
 }
 
 .user-nav-link:hover {
@@ -226,7 +227,7 @@ body {
   position: absolute;
   background-image: url(/img/icon/header-user-nav/compare.svg);
   background-repeat: no-repeat;
-  top: 14px;
+  top: 9px;
   left: -27px;
 }
 
