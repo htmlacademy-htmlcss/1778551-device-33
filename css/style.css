@@ -221,7 +221,6 @@ body {
 
 .icon-compare::before {
   content: "";
-
   width: 10px;
   height: 12px;
   position: absolute;
@@ -377,8 +376,6 @@ body {
 
 /*!!                     START-SLIDER */
 .counter {
-  font-family: Rubik;
-  font-style: normal;
   font-weight: bold;
   font-size: 180px;
   line-height: 30px;
@@ -399,17 +396,11 @@ body {
 }
 
 .characteristic-list dt {
-  font-family: Rubik;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 30px;
   color: #444444;
 }
 .characteristic-list dd {
-  font-family: Rubik;
-  font-style: normal;
-  font-weight: normal;
   font-size: 36px;
   line-height: 30px;
   color: #000000;
