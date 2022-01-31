@@ -92,7 +92,6 @@ body {
 
 .icon-login::before {
   content: "";
-
   width: 15px;
   height: 12px;
   position: absolute;
@@ -107,7 +106,7 @@ body {
   width: 10px;
   height: 12px;
   position: absolute;
-  background-image: url(/img/icon/header-user-nav/compare.svg);
+  background-image: url(../img/icon/header-user-nav/compare.svg);
   background-repeat: no-repeat;
   top: 9px;
   left: -27px;
@@ -118,7 +117,7 @@ body {
   width: 31px;
   height: 21px;
   position: absolute;
-  background-image: url(/img/icon/header-user-nav/basket-counter.svg);
+  background-image: url(../img/icon/header-user-nav/basket-counter.svg);
   background-repeat: no-repeat;
   top: 4.5px;
   left: -43px;
