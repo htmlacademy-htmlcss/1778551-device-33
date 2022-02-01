@@ -190,7 +190,7 @@ body {
   margin-right: 198px;
 }
 .user-nav__item:nth-child(2) {
-  margin-right: 61px;
+  margin-right: 64px;
 }
 
 .user-nav-link {
@@ -232,13 +232,13 @@ body {
 
 .icon-basket::before {
   content: "";
-  width: 31px;
-  height: 21px;
+  width: 16px;
+  height: 14px;
   position: absolute;
-  background-image: url(../img/icon/header-user-nav/basket-counter.svg);
+  background-image: url(../img/icon/header-user-nav/basket.svg);
   background-repeat: no-repeat;
-  top: 4.5px;
-  left: -43px;
+  top: 7px;
+  left: -28px;
 }
 
 /*!!=========================================================================================== PAGE-NAV-CONTAINER */
