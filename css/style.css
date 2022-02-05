@@ -6,7 +6,8 @@
   box-sizing: border-box;
 }
 
-.wrapper-page {
+.wrapper-page,
+.wrapper-inner {
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -42,24 +43,14 @@
   font-display: swap;
 }
 
-html,
-body {
-  height: 100%;
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 400;
-  font-family: "Rubik", sans-serif;
-  font-style: normal;
-  color: #171616;
-  background: #ffffff;
-}
 .main-index {
   flex: 1 1 auto;
   /* flex-grow: 1; */
 }
 
 .main-catalog {
-  flex-grow: 1;
+  flex: 1 1 auto;
+  /* flex-grow: 1; */
 }
 
 .visually-hidden {
@@ -88,6 +79,19 @@ body {
   text-transform: uppercase;
   color: #000000;
   display: inline-block;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  color: #171616;
+  background: #ffffff;
 }
 
 /* !!================================================HEADER ======START===============================*/
@@ -301,6 +305,7 @@ body {
 .catalog-group-inner {
   display: flex;
   width: 675px;
+  height: 125px;
   margin-bottom: 24px;
 }
 
@@ -1152,13 +1157,35 @@ body {
 /* !!=====================FOOTER-FINISH */
 
 /* TODO====================PAGE-CATALOG */
+.main-catalog {
+  background: #f0f0f0;
+}
 
-.header-inner-title {
+.catalog-inner {
+  display: flex;
+  flex-direction: column;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.breadcrumbs-title {
+  margin: 0;
   font-family: Raleway;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
   color: #000000;
+}
+
+.breadcrumbs-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.breadcrumbs-item:not(:last-child) {
+  margin-right: 36px;
 }
 
 .breadcrumbs-link {
@@ -1167,7 +1194,20 @@ body {
   color: #000000;
 }
 
+.catalog-filter {
+  width: 320px;
+}
+
+.price-control,
+.catalog-filter-group {
+  border: none;
+  border-top: 2px solid #171616;
+  margin: 0;
+  padding: 0;
+}
+
 .catalog-filter-title {
+  margin: 0;
   font-family: Raleway;
   font-weight: 800;
   font-size: 16px;
@@ -1175,6 +1215,12 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
+}
+
+.catalog-filter-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .control-input {
@@ -1190,6 +1236,14 @@ body {
   opacity: 0.3;
 }
 
+.catalog {
+  display: flex;
+}
+
+.header-products-nav {
+  display: flex;
+}
+
 .catalog-sort-link {
   font-family: Raleway;
   font-weight: 800;
@@ -1200,8 +1254,37 @@ body {
   color: #000000;
 }
 
+.catalog-popular-up {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  background: url("../img/arrow/arrow-up.svg") no-repeat center;
+  border: none;
+}
+
+.catalog-popular-down {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  background: url("../img/arrow/arrow-down.svg") no-repeat center;
+  border: none;
+}
+
 .popular {
   color: #000000;
+}
+
+.nav-products {
+  background: #ffffff;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: 360px 360px;
+  grid-gap: 44px 40px;
+  margin: 0;
+  padding: 70px 40px 0 40px;
+  list-style: none;
 }
 
 .title-product {
@@ -1218,42 +1301,41 @@ body {
   color: #444444;
 }
 
+.products-pagination-list {
+  width: 760px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  background: #ebebeb;
+}
+
 .btn-still {
+  width: 760px;
+  margin: 0 auto;
   font-family: Raleway;
   font-style: normal;
   font-weight: 800;
   font-size: 16px;
   line-height: 19px;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
+  padding: 0;
 }
 
-.btn-back {
+.products-pagination-button {
   font-family: Raleway;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
-  align-items: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
-}
-
-.btn-back-text {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 21px;
-  align-items: center;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: #000000;
+  padding: 0;
+  border: none;
+  background: transparent;
 }
 
 .products-pagination-link {
