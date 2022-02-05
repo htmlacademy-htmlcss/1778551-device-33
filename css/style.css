@@ -1,4 +1,5 @@
 * {
+  list-style: none;
   text-decoration: none;
   box-sizing: border-box;
 }
@@ -74,7 +75,6 @@
   padding: 10px 5px;
   background: transparent;
   border: none;
-  width: calc(width);
 }
 
 .button::before {
@@ -84,7 +84,7 @@
   width: 220px;
   height: 8px;
   background: #ffe17f;
-  top: 16px;
+  top: 15px;
   left: 0;
   z-index: -1;
 }
@@ -355,11 +355,7 @@ body {
   list-style: none;
 }
 
-.nav-page__item:nth-child(1) {
-  margin-right: 44px;
-}
-
-.nav-page__item:nth-child(2) {
+.nav-page__item:not(:last-child) {
   margin-right: 44px;
 }
 
@@ -474,6 +470,7 @@ body {
 .btn-link {
   display: inline-block;
   margin-bottom: 49px;
+  width: 220px;
 }
 
 .characteristic {
