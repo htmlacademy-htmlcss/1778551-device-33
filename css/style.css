@@ -70,7 +70,6 @@
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
-  width: max-content;
   height: 40px;
   padding: 10px 5px;
   background: transparent;
@@ -700,6 +699,7 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+  z-index: 1;
 }
 
 .garant,
@@ -714,9 +714,23 @@ body {
   list-style: none;
 }
 
+.service-item-cheked {
+  background: #171616;
+  margin-bottom: 35px;
+}
+
 .service-item:not(:last-child) {
   margin-bottom: 35px;
 }
+
+.service-item:hover {
+  background: #171616;
+}
+
+.service-btn:hover {
+  color: #ffe17f;
+}
+
 .service-item-desk {
   position: absolute;
 }
