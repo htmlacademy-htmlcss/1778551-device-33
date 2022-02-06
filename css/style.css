@@ -1280,11 +1280,50 @@ body {
   list-style: none;
 }
 
+.product-item {
+  position: relative;
+}
+
+.product-item:hover {
+  opacity: 0.6;
+}
+
+.product-item:active {
+  opacity: 0.3;
+}
+
+.product-img:hover {
+  outline: 1px solid #444444;
+}
+
+.product-button {
+  width: 220px;
+  opacity: 0;
+  position: absolute;
+  top: 170px;
+  left: 70px;
+  z-index: 2;
+}
+
+.product-button:hover {
+  opacity: 1;
+}
+
+.product-name-price {
+  display: flex;
+  justify-content: space-between;
+}
+
 .title-product {
+  margin: 0;
   font-size: 18px;
   line-height: 20px;
   letter-spacing: -0.02em;
   color: #000000;
+}
+
+.title-product:hover {
+  opacity: 0.6;
 }
 
 .price {
