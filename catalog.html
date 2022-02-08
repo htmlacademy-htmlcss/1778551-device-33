@@ -220,118 +220,133 @@
             action="https://echo.htmlacademy.ru/"
             method="post"
           >
-            <h2 class="catalog-filter-title">Фильтр</h2>
-            <fieldset class="price-control">
-              <legend class="catalog-filter-title">Стоимость</legend>
-              <input
-                type="range"
-                id="pricecount"
-                name="pricecount"
-                min="0"
-                max="5000"
-                step="1"
-              />
-              <span class="counter-range">от 1</span>
-              <span class="counter-range">до 5000</span>
+            <fieldset>
+              <legend class="catalog-filter-title">Фильтр</legend>
+              <fieldset class="price-control">
+                <legend class="filter-title">Стоимость</legend>
+                <input
+                  type="range"
+                  id="pricecount"
+                  name="pricecount"
+                  min="0"
+                  max="5000"
+                  step="1"
+                />
+                <span class="counter-range">от 1</span>
+                <span class="counter-range">до 5000</span>
+              </fieldset>
+              <fieldset class="catalog-filter-group">
+                <legend class="filter-title">Цвет</legend>
+                <ul class="catalog-filter-list">
+                  <li class="catalog-item">
+                    <label class="filter-control">
+                      <input
+                        class="control-input"
+                        type="checkbox"
+                        name="black"
+                        value="black"
+                        checked
+                      />
+                      Черный
+                    </label>
+                  </li>
+                  <li class="catalog-item">
+                    <label class="filter-control">
+                      <input
+                        class="control-input"
+                        type="checkbox"
+                        name="white"
+                        value="white"
+                        checked
+                      />
+                      Белый
+                    </label>
+                  </li>
+                  <li class="catalog-item">
+                    <label class="filter-control">
+                      <input
+                        class="control-input"
+                        type="checkbox"
+                        name="blue"
+                        value="blue"
+                      />
+                      Синий
+                    </label>
+                  </li>
+                  <li class="catalog-item">
+                    <label class="filter-control">
+                      <input
+                        class="control-input"
+                        type="checkbox"
+                        name="red"
+                        value="red"
+                      />
+                      Красный
+                    </label>
+                  </li>
+                  <li class="catalog-item">
+                    <label class="filter-control">
+                      <input
+                        class="control-input"
+                        type="checkbox"
+                        name="purple"
+                        value="purple"
+                      />
+                      Фиолетовый
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="catalog-filter-group">
+                <legend class="filter-title">Bluetooth</legend>
+                <ul class="catalog-filter-list">
+                  <li class="catalog-filter-item">
+                    <label class="filter-control">
+                      <input
+                        class="control-input"
+                        type="radio"
+                        name="bluetooth-group"
+                        value="yes"
+                        checked
+                      />
+                      Есть
+                    </label>
+                  </li>
+                  <li class="catalog-filter-item">
+                    <label class="filter-control">
+                      <input
+                        class="control-input"
+                        type="radio"
+                        name="bluetooth-group"
+                        value="no"
+                      />
+                      Нет
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <button class="button" type="submit">Показать</button>
             </fieldset>
-            <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Цвет</legend>
-              <ul class="catalog-filter-list">
-                <li class="catalog-item">
-                  <label class="filter-control">
-                    <input
-                      class="control-input"
-                      type="checkbox"
-                      name="black"
-                      checked
-                    />
-                    Черный
-                  </label>
-                </li>
-                <li class="catalog-item">
-                  <label class="filter-control">
-                    <input
-                      class="control-input"
-                      type="checkbox"
-                      name="white"
-                      checked
-                    />
-                    Белый
-                  </label>
-                </li>
-                <li class="catalog-item">
-                  <label class="filter-control">
-                    <input class="control-input" type="checkbox" name="blue" />
-                    Синий
-                  </label>
-                </li>
-                <li class="catalog-item">
-                  <label class="filter-control">
-                    <input class="control-input" type="checkbox" name="red" />
-                    Красный
-                  </label>
-                </li>
-                <li class="catalog-item">
-                  <label class="filter-control">
-                    <input
-                      class="control-input"
-                      type="checkbox"
-                      name="purple"
-                    />
-                    Фиолетовый
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Bluetooth</legend>
-              <ul class="catalog-filter-list">
-                <li class="catalog-filter-item">
-                  <label class="filter-control">
-                    <input
-                      class="control-input"
-                      type="radio"
-                      name="bluetooth-group"
-                      value="yes"
-                      checked
-                    />
-                    Есть
-                  </label>
-                </li>
-                <li class="catalog-filter-item">
-                  <label class="filter-control">
-                    <input
-                      class="control-input"
-                      type="radio"
-                      name="bluetooth-group"
-                      value="no"
-                    />
-                    Нет
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <button class="button" type="submit">Показать</button>
           </form>
           <div class="products">
-            <ul class="produts-nav-list">
-              <li class="produts-nav-item">
-                <a class="catalog-sort-link" href="#">Сортировка</a>
-              </li>
-              <li class="produts-nav-item">
-                <select class="select-control" aria-label="Популярные">
-                  <option value="popular">Популярные</option>
-                  <option value="quadrocopters">Квадракоптеры</option>
-                  <option value="clock">Часы</option>
-                </select>
-              </li>
-              <li class="produts-nav-item">
-                <button class="catalog-popular-up" type="button"></button>
-              </li>
-              <li class="produts-nav-item">
-                <button class="catalog-popular-down" type="button"></button>
-              </li>
-            </ul>
+            <div class="products-nav-container">
+              <ul class="produts-nav-list">
+                <li class="produts-nav-item">
+                  <a class="catalog-sort-link" href="#">Сортировка</a>
+                </li>
+                <li class="produts-nav-item">
+                  <select class="select-control" aria-label="Популярные">
+                    <option value="popular">Популярные</option>
+                    <option value="quadrocopters">Квадракоптеры</option>
+                    <option value="clock">Часы</option>
+                  </select>
+                </li>
+                <li class="produts-nav-item--button">
+                  <button class="catalog-popular-up" type="button"></button>
+                  <button class="catalog-popular-down" type="button"></button>
+                </li>
+              </ul>
+            </div>
             <ul class="product-list">
               <li class="product-item">
                 <a class="product-item-link" href="#">
@@ -419,34 +434,34 @@
                 </button>
               </li>
             </ul>
-            <button class="btn-still" type="button">Загрузить еще</button>
-            <ul class="products-pagination-list">
-              <li class="products-pagination-item">
-                <button class="products-pagination-button back" type="button">
-                  <span class="btn-back-text">Назад</span>
-                </button>
-              </li>
-              <li class="products-pagination-item">
-                <a class="products-pagination-link" href="#">1</a>
-              </li>
-              <li class="products-pagination-item">
-                <a class="products-pagination-link" href="#">2</a>
-              </li>
-              <li class="products-pagination-item">
-                <a class="products-pagination-link" href="#">3</a>
-              </li>
-              <li class="products-pagination-item">
-                <a class="products-pagination-link" href="#">...</a>
-              </li>
-              <li class="products-pagination-item">
-                <a class="products-pagination-link" href="#">15</a>
-              </li>
-              <li class="products-pagination-item">
-                <button class="products-pagination-button" type="button">
-                  <span class="btn-back-text">Вперед </span>
-                </button>
-              </li>
-            </ul>
+            <button class="btn-still" type="button">
+              <span class="btn-still-text">Загрузить еще</span>
+            </button>
+            <div class="pagination-container">
+              <button class="products-pagination-button back" type="button">
+                <span class="show-back-pages text-button">Назад</span>
+              </button>
+              <ul class="products-pagination-list">
+                <li class="products-pagination-item">
+                  <a class="products-pagination-link" href="#">1</a>
+                </li>
+                <li class="products-pagination-item">
+                  <a class="products-pagination-link" href="#">2</a>
+                </li>
+                <li class="products-pagination-item">
+                  <a class="products-pagination-link" href="#">3</a>
+                </li>
+                <li class="products-pagination-item">
+                  <a class="products-pagination-link" href="#">...</a>
+                </li>
+                <li class="products-pagination-item">
+                  <a class="products-pagination-link" href="#">15</a>
+                </li>
+              </ul>
+              <button class="products-pagination-button" type="button">
+                <span class="show-next-pages text-button">Вперед </span>
+              </button>
+            </div>
           </div>
         </div>
       </section>

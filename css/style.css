@@ -1202,7 +1202,7 @@ body {
 
 .catalog-filter {
   width: 320px;
-  padding: 25px 0 0 60px;
+  padding: 25.5px 0 0 60px;
 }
 
 .price-control,
@@ -1214,6 +1214,17 @@ body {
 }
 
 .catalog-filter-title {
+  margin: 0;
+  font-family: Raleway;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.filter-title {
   margin: 0;
   font-family: Raleway;
   font-weight: 800;
@@ -1249,6 +1260,10 @@ body {
   margin: 0 auto;
 }
 
+.products {
+  background: #ffffff;
+}
+
 .catalog-sort-link {
   font-family: Raleway;
   font-weight: 800;
@@ -1257,6 +1272,10 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
+}
+
+.produts-nav-item--button {
+  display: flex;
 }
 
 .catalog-popular-up {
@@ -1285,6 +1304,18 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
+  padding: 20px 40px 25px 40px;
+  justify-content: space-between;
+}
+
+.select-control {
+  width: 159px;
+  height: 30px;
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
 }
 
 .product-list {
@@ -1350,18 +1381,19 @@ body {
   color: #444444;
 }
 
-.products-pagination-list {
-  width: 760px;
-  margin: 0 auto;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  background: #ebebeb;
-}
-
 .btn-still {
   width: 760px;
-  margin: 0 auto;
+  display: block;
+  margin: 0 auto 44px;
+  padding: 0;
+  border: 3px solid #e5e5e5;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+.btn-still-text {
+  display: block;
+  padding: 18px 0;
   font-family: Raleway;
   font-style: normal;
   font-weight: 800;
@@ -1370,10 +1402,38 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
+}
+
+.pagination-container {
+  width: 760px;
+  margin: 0 auto 78px;
+  display: flex;
+  background: #ebebeb;
+  justify-content: space-between;
+}
+.products-pagination-list {
   padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  padding: 15.5px 0;
+  align-items: center;
+}
+
+.products-pagination-item {
+  width: 40px;
+  height: 40px;
 }
 
 .products-pagination-button {
+  padding: 0;
+  border: none;
+  background: transparent;
+  width: 128px;
+  height: 71px;
+}
+
+.text-button {
   font-family: Raleway;
   font-style: normal;
   font-weight: 800;
@@ -1382,16 +1442,14 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
-  padding: 0;
-  border: none;
-  background: transparent;
 }
 
 .products-pagination-link {
-  display: inline-block;
+  display: block;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   color: #444444;
   opacity: 0.3;
+  padding: 10px;
 }
