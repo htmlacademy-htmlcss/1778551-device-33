@@ -140,6 +140,7 @@ body {
   position: relative;
   display: flex;
   width: 517px;
+  margin-right: 26px;
 }
 
 .search-name::before {
@@ -196,21 +197,24 @@ body {
 
 /* !!====================================================================USER-NAV */
 .user-nav__list {
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.user-nav__list,
+.user-nav-basket {
   display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.user-nav__item {
+.user-nav-basket .user-nav__item {
   position: relative;
   align-items: center;
 }
 
-.user-nav__item:first-child {
-  margin-right: 174px;
-}
-.user-nav__item:nth-child(2) {
+.user-nav-basket__item:not(:last-child) {
   margin-right: 36px;
 }
 
@@ -809,6 +813,10 @@ body {
   color: #000000;
   margin: 0 auto;
   padding: 40px 0;
+}
+
+.delivery-company-item {
+  list-style: disc;
 }
 
 .order-delivery-info {
