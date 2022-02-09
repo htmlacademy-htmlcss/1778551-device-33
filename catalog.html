@@ -33,15 +33,6 @@
                 />
                 <path d="M83.4.36v10.1L91 .36h-7.6Z" fill="#000" />
               </g>
-              <defs>
-                <clipPath id="a">
-                  <path
-                    fill="#fff"
-                    transform="translate(0 .36)"
-                    d="M0 0h145v36H0z"
-                  />
-                </clipPath>
-              </defs>
             </svg>
           </a>
           <div class="user-nav-container">
@@ -75,30 +66,32 @@
                   Войти
                 </a>
               </li>
-              <ul class="user-nav-basket">
-                <li class="user-nav-basket__item">
-                  <a class="user-nav-link" href="#">
-                    <img
-                      class="icon-compare"
-                      src="img/icon/header-user-nav/compare.svg"
-                      width="10"
-                      height="12"
-                      alt="Сравнить"
-                    />Сравнить
-                  </a>
-                </li>
-                <li class="user-nav-basket__item">
-                  <a class="user-nav-link" href="#">
-                    <img
-                      class="icon-basket"
-                      src="img/icon/header-user-nav/basket.svg"
-                      width="16"
-                      height="14"
-                      alt="Сравнить"
-                    />Корзина
-                  </a>
-                </li>
-              </ul>
+              <li class="user-nav__item">
+                <ul class="user-nav-basket">
+                  <li class="user-nav-basket__item">
+                    <a class="user-nav-link" href="#">
+                      <img
+                        class="icon-compare"
+                        src="img/icon/header-user-nav/compare.svg"
+                        width="10"
+                        height="12"
+                        alt="Сравнить"
+                      />Сравнить
+                    </a>
+                  </li>
+                  <li class="user-nav-basket__item">
+                    <a class="user-nav-link" href="#">
+                      <img
+                        class="icon-basket"
+                        src="img/icon/header-user-nav/basket.svg"
+                        width="16"
+                        height="14"
+                        alt="Сравнить"
+                      />Корзина
+                    </a>
+                  </li>
+                </ul>
+              </li>
             </ul>
           </div>
           <section class="page-nav-container">
@@ -145,13 +138,13 @@
             <nav class="nav-page">
               <ul class="nav-page__list">
                 <li class="nav-page__item">
-                  <a class="nav-page__link link" href="#">доставка</a>
+                  <a class="nav-page__link" href="#">доставка</a>
                 </li>
                 <li class="nav-page__item">
-                  <a class="nav-page__link link" href="#">гарантия</a>
+                  <a class="nav-page__link" href="#">гарантия</a>
                 </li>
                 <li class="nav-page__item">
-                  <a class="nav-page__link link" href="#">контакты</a>
+                  <a class="nav-page__link" href="#">контакты</a>
                 </li>
               </ul>
             </nav>
@@ -178,11 +171,6 @@
                   fill="black"
                 />
               </g>
-              <defs>
-                <clipPath id="clip0_14602_770">
-                  <rect width="4" height="7" fill="white" />
-                </clipPath>
-              </defs>
             </svg>
           </li>
           <li class="breadcrumbs-item">
@@ -200,11 +188,6 @@
                   fill="black"
                 />
               </g>
-              <defs>
-                <clipPath id="clip0_14602_770">
-                  <rect width="4" height="7" fill="white" />
-                </clipPath>
-              </defs>
             </svg>
           </li>
           <li class="breadcrumbs-item">
@@ -221,7 +204,7 @@
             method="post"
           >
             <h2 class="catalog-filter-title">Фильтр</h2>
-            <fieldset class="price-control">
+            <fieldset class="catalog-filter-group">
               <legend class="filter-title">Стоимость</legend>
               <input
                 type="range"
@@ -238,7 +221,7 @@
               <legend class="filter-title">Цвет</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-item">
-                  <label class="filter-control">
+                  <label class="custom-checkbox">
                     <input
                       class="control-input"
                       type="checkbox"
@@ -246,11 +229,11 @@
                       value="black"
                       checked
                     />
-                    Черный
+                    <span>Черный</span>
                   </label>
                 </li>
                 <li class="catalog-item">
-                  <label class="filter-control">
+                  <label class="custom-checkbox">
                     <input
                       class="control-input"
                       type="checkbox"
@@ -258,40 +241,40 @@
                       value="white"
                       checked
                     />
-                    Белый
+                    <span>Белый</span>
                   </label>
                 </li>
                 <li class="catalog-item">
-                  <label class="filter-control">
+                  <label class="custom-checkbox">
                     <input
                       class="control-input"
                       type="checkbox"
                       name="blue"
                       value="blue"
                     />
-                    Синий
+                    <span>Синий</span>
                   </label>
                 </li>
                 <li class="catalog-item">
-                  <label class="filter-control">
+                  <label class="custom-checkbox">
                     <input
                       class="control-input"
                       type="checkbox"
                       name="red"
                       value="red"
                     />
-                    Красный
+                    <span>Красный</span>
                   </label>
                 </li>
                 <li class="catalog-item">
-                  <label class="filter-control">
+                  <label class="custom-checkbox">
                     <input
                       class="control-input"
                       type="checkbox"
                       name="purple"
                       value="purple"
                     />
-                    Фиолетовый
+                    <span>Фиолетовый</span>
                   </label>
                 </li>
               </ul>
@@ -300,7 +283,7 @@
               <legend class="filter-title">Bluetooth</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
-                  <label class="filter-control">
+                  <label class="custom-radio">
                     <input
                       class="control-input"
                       type="radio"
@@ -308,18 +291,18 @@
                       value="yes"
                       checked
                     />
-                    Есть
+                    <span>Есть</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="filter-control">
+                  <label class="custom-radio">
                     <input
                       class="control-input"
                       type="radio"
                       name="bluetooth-group"
                       value="no"
                     />
-                    Нет
+                    <span>Нет</span>
                   </label>
                 </li>
               </ul>
@@ -480,15 +463,6 @@
               />
               <path d="M83.4.36v10.1L91 .36h-7.6Z" fill="#FFC700" />
             </g>
-            <defs>
-              <clipPath id="a">
-                <path
-                  fill="#fff"
-                  transform="translate(0 .36)"
-                  d="M0 0h145v36H0z"
-                />
-              </clipPath>
-            </defs>
           </svg>
         </a>
         <section class="footer-info">
