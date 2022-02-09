@@ -171,9 +171,6 @@ body {
 
 .search-btn {
   width: 160px;
-  height: 40px;
-  padding: 8px 55px;
-  box-sizing: border-box;
   border-radius: 0px 50px 50px 0px;
   background: transparent;
   font-size: 16px;
@@ -599,7 +596,7 @@ body {
 /* ?===================START-CATEGORY */
 .category-container {
   width: 1160px;
-  margin: 0 auto;
+  margin: 0 auto 70px;
 }
 
 .category-list {
@@ -697,7 +694,7 @@ body {
 
 .service__container {
   width: 1160px;
-  margin: 0 auto;
+  margin: 0 auto 70px;
   display: flex;
   position: relative;
 }
@@ -745,13 +742,14 @@ body {
 }
 
 .service-btn-cheked {
-  font-family: Raleway;
-  font-weight: 800;
-  line-height: 21px;
-  text-align: center;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
+  width: 160px;
+  display: inline-block;
   color: #ffe17f;
+}
+
+.service-btn {
+  display: inline-block;
+  width: 160px;
 }
 
 .service-title {
@@ -790,7 +788,7 @@ body {
 /*!!              START-ORDER-DELIVERY */
 .order-delivery__container {
   width: 1160px;
-  margin: 0 auto;
+  margin: 0 auto 70px;
   display: flex;
   align-items: center;
   background: #f0f0f0;
@@ -855,7 +853,7 @@ body {
 .details-container {
   display: flex;
   width: 1160px;
-  margin: 0 auto;
+  margin: 0 auto 70px;
 }
 
 .about {
@@ -926,14 +924,6 @@ body {
 }
 
 .details-link {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 21px;
-  text-align: center;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: #000000;
   width: 270px;
 }
 
@@ -947,6 +937,7 @@ body {
 .mailing__container {
   width: 1160px;
   margin: 0 auto;
+  padding-bottom: 70px;
 }
 
 .mailing-content {
@@ -997,6 +988,7 @@ body {
 }
 
 .mailing-decor {
+  padding: 13.5px 0;
   color: #444444;
   position: relative;
   margin-left: auto;
@@ -1008,9 +1000,9 @@ body {
   position: absolute;
   width: 14px;
   height: 14px;
-  top: 0;
-  left: 0;
-  background: url(../img/decor-images/tick.svg) no-repeat;
+  top: 25.5px;
+  left: 26px;
+  background: url("../img/decor-images/tick.svg") no-repeat;
 }
 
 /* !!             FINISH-IMPORTANT-NEWS */
@@ -1027,7 +1019,8 @@ body {
 
 .footer-container {
   max-width: 1160px;
-  margin: 62px auto;
+  margin: 0 auto;
+  padding-top: 70px;
 }
 
 .logo-link {
@@ -1090,6 +1083,7 @@ body {
   padding: 0;
   list-style: none;
   justify-content: center;
+  cursor: pointer;
 }
 
 .social-nav-item {
