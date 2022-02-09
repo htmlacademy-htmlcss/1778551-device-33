@@ -1190,23 +1190,6 @@ body {
   color: #000000;
 }
 
-.products-catalog {
-  background: #f0f0f0;
-}
-
-.catalog-filter {
-  width: 320px;
-  padding: 25.5px 0 0 60px;
-}
-
-.price-control,
-.catalog-filter-group {
-  border: none;
-  border-top: 2px solid #171616;
-  margin: 0;
-  padding: 0;
-}
-
 .catalog-filter-title {
   margin: 0;
   font-family: Raleway;
@@ -1227,6 +1210,33 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
+}
+
+.products-catalog {
+  background: #f0f0f0;
+}
+
+.catalog-filter {
+  width: 320px;
+  padding: 25.5px 0 0 60px;
+}
+
+.price-control,
+.catalog-filter-group {
+  border: none;
+  border-top: 2px solid #171616;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 35px;
+}
+
+.catalog-item:not(:last-child) {
+  margin-bottom: 17px;
+}
+
+.filter-button {
+  width: 220px;
+  z-index: 1;
 }
 
 .catalog-filter-list {
@@ -1252,10 +1262,6 @@ body {
   display: flex;
   width: 1160px;
   margin: 0 auto;
-}
-
-.products {
-  background: #ffffff;
 }
 
 .catalog-sort-link {
