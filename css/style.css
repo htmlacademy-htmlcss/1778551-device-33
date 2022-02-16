@@ -1509,6 +1509,8 @@ body {
 
 /* TODO====================PAGE-CATALOG */
 
+/*? breadcrumbs */
+
 .breadcrumbs {
   width: 1160px;
   margin: 0 auto 35px;
@@ -1549,6 +1551,10 @@ body {
   color: #000000;
   margin-right: 16px;
 }
+
+/*? breadcrumbs */
+
+/*? filter */
 
 .catalog-filter {
   width: 320px;
@@ -1605,28 +1611,27 @@ body {
 }
 
 /*!! CUSTOM-CHECKBOX      START*/
-.custom-checkbox > input {
+.custom-checkbox {
+  padding-left: 36px;
+  position: relative;
+}
+.chekbox {
   position: absolute;
-  z-index: -1;
-  opacity: 0;
-}
-
-.custom-checkbox > span {
-  display: inline-flex;
-  align-items: center;
-  user-select: none;
-}
-
-.custom-checkbox > span::before {
-  content: "";
-  display: inline-block;
+  top: 0;
+  display: block;
   width: 20px;
   height: 20px;
-  border: 2px solid #cccccc;
+  border: 2px solid grey;
   border-radius: 3px;
-  margin-right: 16px;
-  background-repeat: no-repeat;
-  background-position: center center;
+}
+
+.control-input:checked + .chekbox {
+  background: url("../img/decor-images/check.svg") no-repeat center;
+  border: 2px solid black;
+}
+
+.control-input:focus + .chekbox {
+  border: 2px solid #af4fff;
 }
 
 .catalog-item:hover {
@@ -1635,10 +1640,6 @@ body {
 
 .catalog-item:active {
   opacity: 0.3;
-}
-
-.custom-checkbox > input:checked + span::before {
-  background-image: url("../img/decor-images/check.svg");
 }
 
 /*!! CUSTOM-CHECKBOX      FINISH*/
