@@ -603,18 +603,21 @@ body {
   position: absolute;
   right: 50px;
   top: 74px;
+  z-index: -1;
 }
 
 .counter-2 {
   position: absolute;
   right: 60px;
   display: none;
+  z-index: -1;
 }
 
 .counter-3 {
   position: absolute;
   right: 60px;
   display: none;
+  z-index: -1;
 }
 
 .slide-title {
