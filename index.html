@@ -216,9 +216,6 @@
       <section class="slider">
         <h2 class="visually-hidden">Слайдер</h2>
         <div class="wrapper-slider container">
-          <input type="radio" name="point" id="slide-1" checked />
-          <input type="radio" name="point" id="slide-2" />
-          <input type="radio" name="point" id="slide-3" />
           <div class="slider-button">
             <button class="slider-back" type="button">
               <span class="visually-hidden">назад</span>
@@ -268,7 +265,38 @@
                 Этот обычный, на первый взгляд, квадрокоптер оснащен мощным
                 лазером, замаскированным под стандартную камеру.
               </p>
-              <a class="btn-link button link-uppercase" href="#">подробнее</a>
+              <div class="controls">
+                <a class="btn-link button link-uppercase" href="#">
+                  подробнее
+                </a>
+                <fieldset class="slider-radio-control">
+                  <label class="slider__custom-radio">
+                    <input
+                      class="slider__control-radio visually-hidden"
+                      type="radio"
+                      name="slides"
+                      checked
+                    />
+                    <span class="slider__radio-box"></span>
+                  </label>
+                  <label class="slider__custom-radio">
+                    <input
+                      class="slider__control-radio visually-hidden"
+                      type="radio"
+                      name="slides"
+                    />
+                    <span class="slider__radio-box"></span>
+                  </label>
+                  <label class="slider__custom-radio">
+                    <input
+                      class="slider__control-radio visually-hidden"
+                      type="radio"
+                      name="slides"
+                    />
+                    <span class="slider__radio-box"></span>
+                  </label>
+                </fieldset>
+              </div>
               <div class="characteristic">
                 <dl class="characteristic-list">
                   <dt>800 м</dt>
@@ -316,11 +344,6 @@
                 </dl>
               </div>
             </div>
-          </div>
-          <div class="slider-control">
-            <label for="slide-1"></label>
-            <label for="slide-2"></label>
-            <label for="slide-3"></label>
           </div>
         </div>
       </section>
