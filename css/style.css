@@ -100,7 +100,9 @@ html {
 }
 
 body {
-  margin: 0;
+  padding: 0 10px;
+  width: 1440px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -173,7 +175,7 @@ body {
 .search-field {
   position: relative;
   width: 357px;
-  padding: 10px 56px;
+  padding: 10.5px 56px;
   border-top: 2px solid #000000;
   border-bottom: 2px solid #000000;
   border-right: none;
@@ -1666,35 +1668,35 @@ body {
 /*!! CUSTOM-CHECKBOX      FINISH*/
 
 /*!! CUSTOM-RADIO      START*/
-.custom-radio > input {
+.custom-radio {
+  padding-left: 36px;
+  position: relative;
+}
+
+.radio__box {
   position: absolute;
-  z-index: -1;
-  opacity: 0;
-}
-
-.custom-radio > span {
-  display: inline-flex;
-  align-items: center;
-  user-select: none;
-}
-
-.custom-radio > span::before {
-  content: "";
-  display: inline-block;
+  top: 0;
+  display: block;
+  border: 2px solid #000000;
+  border-radius: 50px;
   width: 20px;
   height: 20px;
-  border: 2px solid #000000;
-  border-radius: 25px;
-  margin-right: 16px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  z-index: 2;
 }
 
-.custom-radio > input:checked + span::before {
-  background: black;
+.radio__box::before {
+  content: "";
+  position: absolute;
   width: 8px;
   height: 8px;
+  border-radius: 50px;
+  background: #000000;
+  display: none;
+  top: 4px;
+  left: 4px;
+}
+
+.control-radio:checked + .radio__box::before {
+  display: block;
 }
 
 .catalog-item:hover {
