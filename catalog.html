@@ -16,7 +16,7 @@
   <body>
     <h1 class="visually-hidden">Девайс</h1>
     <header class="header">
-      <div class="header-wrapper">
+      <div class="header-wrapper-catalog">
         <section class="header-container">
           <h2 class="visually-hidden">Навигация по сайту</h2>
           <a class="header-container__link-logo" href="index.html">
@@ -153,7 +153,7 @@
               </li>
             </ul>
           </div>
-          <div class="page-nav-container">
+          <div class="page-nav-container catalog-index">
             <nav class="nav-page">
               <div class="nav-catalog">
                 <a class="nav-page__link link-uppercase" href="catalog.html">
@@ -271,19 +271,46 @@
             action="https://echo.htmlacademy.ru/"
             method="post"
           >
-            <h2 class="catalog-filter-title">Фильтр</h2>
-            <fieldset class="catalog-filter-group">
+            <h2 class="catalog-filter-title">Фильтр:</h2>
+            <fieldset class="catalog-filter-range">
               <legend class="filter-title">Стоимость</legend>
-              <input
-                type="range"
-                id="pricecount"
-                name="pricecount"
-                min="0"
-                max="5000"
-                step="1"
-              />
-              <span class="counter-range">от 1</span>
-              <span class="counter-range">до 5000</span>
+              <div class="range">
+                <div class="range-scale">
+                  <div class="range-bar" style="left: 0px; width: 100px">
+                    <button class="range-toggle toggle-min">
+                      <span class="visually-hidden"
+                        >Изменить минимальную цену.</span
+                      >
+                    </button>
+                    <button class="range-toggle toggle-max">
+                      <span class="visually-hidden"
+                        >Изменить максимальную цену.</span
+                      >
+                    </button>
+                  </div>
+                </div>
+                <div class="range-wrapper-inputs">
+                  <label class="catalog-filter-label">
+                    от
+                    <input
+                      class="range-input"
+                      type="number"
+                      value="50"
+                      name="min-price"
+                    />
+                  </label>
+                  <label class="catalog-filter-label">
+                    до
+                    <input
+                      class="range-input"
+                      type="number"
+                      value="1500"
+                      name="max-price"
+                      style="width: 37px"
+                    />
+                  </label>
+                </div>
+              </div>
             </fieldset>
             <fieldset class="catalog-filter-group">
               <legend class="filter-title">Цвет</legend>
@@ -347,7 +374,7 @@
                       value="purple"
                     />
                     <span class="chekbox"></span>
-                    Фиолетовый
+                    Розовый
                   </label>
                 </li>
               </ul>
@@ -389,8 +416,8 @@
           <div class="products">
             <div class="products-nav-container">
               <ul class="produts-nav-list">
-                <li class="produts-nav-item">
-                  <a class="catalog-sort-link" href="#">Сортировка</a>
+                <li class="produts-nav-item sort">
+                  <a class="catalog-sort-link" href="#">Сортировка:</a>
                 </li>
                 <li class="produts-nav-item">
                   <select class="select-control" aria-label="Популярные">
@@ -399,7 +426,7 @@
                     <option value="clock">Часы</option>
                   </select>
                 </li>
-                <li class="produts-nav-item--button">
+                <li class="produts-nav-item button-sort">
                   <button class="catalog-popular-up" type="button"></button>
                   <button class="catalog-popular-down" type="button"></button>
                 </li>
@@ -415,8 +442,8 @@
                     class="product-img"
                     src="img/content-image/monopad-selfi/foto-1.jpg"
                     width="360"
-                    height="360"
-                    alt="Любительская-селфи-палка"
+                    height="380"
+                    alt="Любительская-селфи-палка."
                   />
                   <div class="product-name-price">
                     <h3 class="title-product">
@@ -442,15 +469,15 @@
                     class="product-img"
                     src="img/content-image/monopad-selfi/product-2.jpg"
                     width="360"
-                    height="360"
-                    alt="Профессиональная селфи-палка "
+                    height="380"
+                    alt="Профессиональная селфи-палка."
                   />
                   <div class="product-name-price">
                     <h3 class="title-product">
                       Профессиональная<br />
                       селфи-палка
                     </h3>
-                    <span class="price">1500 ₽</span>
+                    <span class="price">1 500 ₽</span>
                   </div>
                 </a>
                 <a
@@ -469,16 +496,16 @@
                     class="product-img"
                     src="img/content-image/monopad-selfi/product-3.jpg"
                     width="360"
-                    height="360"
+                    height="380"
                     alt="Непотопляемая
-                селфи-палка"
+                селфи-палка."
                   />
                   <div class="product-name-price">
                     <h3 class="title-product">
                       Непотопляемая<br />
                       селфи-палка
                     </h3>
-                    <span class="price">2500 ₽</span>
+                    <span class="price">2 500 ₽</span>
                   </div>
                 </a>
                 <a
@@ -497,15 +524,15 @@
                     class="product-img"
                     src="img/content-image/monopad-selfi/product-4.jpg"
                     width="360"
-                    height="360"
+                    height="380"
                     alt="Селфи-палка «Следуй за мной»"
                   />
                   <div class="product-name-price">
                     <h3 class="title-product">
                       Селфи-палка «Следуй<br />
-                      за мной»
+                      за мной.»
                     </h3>
-                    <span class="price">1500 ₽</span>
+                    <span class="price">1 500 ₽</span>
                   </div>
                 </a>
                 <a

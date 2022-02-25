@@ -15,7 +15,7 @@
   <body>
     <h1 class="visually-hidden">Девайс</h1>
     <header class="header">
-      <div class="header-wrapper">
+      <div class="header-index">
         <section class="header-container">
           <h2 class="visually-hidden">Навигация по сайту</h2>
           <a class="header-container__link-logo" href="index.html">
@@ -82,7 +82,7 @@
                     </a>
                   </li>
                   <li class="user-nav-basket__item">
-                    <a class="user-nav-link" href="#">
+                    <a class="user-nav-link counter-basket" href="#">
                       <img
                         class="icon-basket"
                         src="img/icon/header-user-nav/basket.svg"
@@ -272,11 +272,13 @@
                   подробнее
                 </a>
                 <fieldset class="slider-radio-control">
+                  <legend class="visually-hidden">Пагинация</legend>
                   <label class="slider__custom-radio">
                     <input
                       class="slider__control-radio visually-hidden"
                       type="radio"
                       name="slides"
+                      value="slide-1"
                       checked
                     />
                     <span class="slider__radio-box"></span>
@@ -598,7 +600,7 @@
             <button class="subscription-btn link-uppercase" type="button">
               Подписаться
             </button>
-            <span class="mailing-decor">это бесплатно</span>
+            <span class="mailing-decor">Это бесплатно</span>
           </form>
         </div>
       </section>
@@ -677,5 +679,125 @@
         </section>
       </div>
     </footer>
+    <div class="modal-container">
+      <div class="modal modal-auth">
+        <section class="modal-content">
+          <h2 class="modal-title">Доставка под заказ</h2>
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <form
+            class="order-form"
+            action="https://echo.htmlacademy.ru/"
+            method="post"
+          >
+            <p class="field-group">
+              <label class="field-title">
+                Ваше имя:
+                <input
+                  class="name-form-field field"
+                  type="text"
+                  name="auth-login"
+                  placeholder="Введите имя"
+                />
+                <img
+                  class="name-icon"
+                  src="img/icon/login-icon.svg"
+                  width="13"
+                  height="12"
+                  alt="Имя пользователя."
+                />
+              </label>
+            </p>
+            <p class="field-group">
+              <label class="field-title">
+                Ваш e-mail:
+                <input
+                  class="name-email-field"
+                  type="email"
+                  name="auth-login"
+                  placeholder="почта"
+                />
+                <img
+                  class="email-icon"
+                  src="img/icon/mail-icons.svg"
+                  width="15"
+                  height="12"
+                  alt="Имя пользователя."
+                />
+                <span class="invalid-mail">Забавный у вас адрес</span>
+              </label>
+            </p>
+            <p class="field-group">
+              <span class="border-invalid">
+                <label class="field-title">
+                  Что нужно привезти:
+                  <input
+                    class="name-product-field field"
+                    type="text"
+                    name="product"
+                    placeholder="В свободной форме"
+                  />
+                </label>
+              </span>
+            </p>
+            <div class="counter-wrapper">
+              <div class="tooltip-container form-label-icon">
+                <h2 class="counter-title">Количество:</h2>
+                <span class="tooltip">
+                  <button
+                    class="tooltip-btn"
+                    type="button"
+                    aria-labelledby="tooltip-label"
+                  >
+                    <svg
+                      class="tooltip-icon"
+                      width="4"
+                      height="12"
+                      viewBox="0 0 4 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M3 0H1V2H3V0Z" fill="black" />
+                      <path d="M3 4H1V12H3V4Z" fill="black" />
+                    </svg>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">
+                    Постараемся найти, сколько нужно. Привезём сколько получится
+                    по требованиям к провозу багажа.
+                  </span>
+                </span>
+              </div>
+              <div class="counter-form-field">
+                <div class="togle-button-container">
+                  <button class="togle-btn togle-minuse" type="button">
+                    <img
+                      class="togle-icon"
+                      src="img/icon/minus.svg"
+                      width="16"
+                      height="16"
+                      alt="Меньше."
+                    />
+                  </button>
+                  <span class="counter-product">1</span>
+                  <button class="togle-btn togle-pluse" type="button">
+                    <img
+                      class="togle-icon"
+                      src="img/icon/pluse.svg"
+                      width="16"
+                      height="16"
+                      alt="Меньше."
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button class="order-button button link-uppercase" type="submit">
+              Отправить
+            </button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
