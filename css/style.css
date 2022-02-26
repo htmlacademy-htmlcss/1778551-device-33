@@ -1091,13 +1091,21 @@ body {
   margin-bottom: 35px;
 }
 
-.service-item-cheked:hover {
-  background: #171616;
+.service-btn-cheked:hover {
+  color: #ffe17f;
   opacity: 0.6;
 }
 
-.service-item-cheked:active {
+.service-btn-cheked:active {
   background: #171616;
+  opacity: 0.3;
+}
+
+.service-btn:hover {
+  opacity: 0.6;
+}
+
+.service-btn:active {
   opacity: 0.3;
 }
 
@@ -1107,12 +1115,10 @@ body {
 
 .service-item:hover {
   background: #171616;
-  opacity: 0.6;
 }
 
 .service-item:active {
   background: #171616;
-  opacity: 0.3;
 }
 
 .service-item:hover .service-btn {
@@ -1123,7 +1129,7 @@ body {
   color: rgba(255, 225, 127, 0.3);
 }
 
-.service-btn:focus-within {
+.service-item:focus-within {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
@@ -1148,7 +1154,6 @@ body {
   display: inline-block;
   min-width: 160px;
   cursor: pointer;
-  z-index: 12;
 }
 
 .service-title {
