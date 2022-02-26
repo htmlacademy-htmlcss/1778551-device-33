@@ -144,12 +144,12 @@ body {
 
 .header-container {
   padding: 0 60px 0 60px;
-  margin: -22px auto;
+  margin: -29px auto;
 }
 
 .header-container__link-logo {
   display: inline-block;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .user-nav-container {
@@ -183,7 +183,7 @@ body {
 .search-field {
   position: relative;
   width: 357px;
-  padding: 9.5px 44px;
+  padding: 10.5px 44px;
   border-top: 2px solid #000000;
   border-bottom: 2px solid #000000;
   border-right: none;
@@ -782,7 +782,7 @@ body {
 .counter-1 {
   position: absolute;
   right: 50px;
-  top: 74px;
+  top: 82px;
   z-index: -1;
 }
 
@@ -1535,7 +1535,7 @@ body {
 .footer-container {
   max-width: 1160px;
   margin: 0 auto;
-  padding-top: 56px;
+  padding-top: 48px;
   position: relative;
 }
 
@@ -1552,7 +1552,7 @@ body {
 
 .logo-link {
   display: inline-block;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
 }
 
 .logo-footer {
@@ -1887,6 +1887,11 @@ body {
   opacity: 0.3;
 }
 
+.catalog-filter-label:focus-within{
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
 .range-input {
   position: relative;
   width: 39px;
@@ -1895,6 +1900,10 @@ body {
   background-color: transparent;
   border: none;
   appearance: textfield;
+}
+
+.range-input:focus {
+  outline: none;
 }
 
 .range-input::-webkit-outer-spin-button,
@@ -2416,6 +2425,7 @@ body {
   height: 100%;
   background: rgba(240, 240, 240, 0.9);
   z-index: 1000;
+  display: none;
 }
 
 .modal {
