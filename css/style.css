@@ -1887,9 +1887,13 @@ body {
   opacity: 0.3;
 }
 
-.catalog-filter-label:focus-within{
+.catalog-filter-label:focus-within {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
+}
+
+.range-input:focus {
+  outline: none;
 }
 
 .range-input {
@@ -1900,10 +1904,6 @@ body {
   background-color: transparent;
   border: none;
   appearance: textfield;
-}
-
-.range-input:focus {
-  outline: none;
 }
 
 .range-input::-webkit-outer-spin-button,
