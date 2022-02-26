@@ -2416,7 +2416,6 @@ body {
   height: 100%;
   background: rgba(240, 240, 240, 0.9);
   z-index: 1000;
-  display: none;
 }
 
 .modal {
@@ -2621,6 +2620,11 @@ body {
   justify-content: space-between;
   display: flex;
   align-items: center;
+}
+
+.invalid-value {
+  outline: 2px solid #ff3d3d;
+  outline: none;
 }
 
 .togle-btn {
