@@ -1890,6 +1890,7 @@ body {
 .catalog-filter-label:focus-within {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
+  opacity: 1;
 }
 
 .range-input:focus {
