@@ -618,8 +618,6 @@ body {
 
 .nav-page__item {
   display: flex;
-  justify-content: flex-end;
-  width: 33%;
 }
 
 .nav-link {
