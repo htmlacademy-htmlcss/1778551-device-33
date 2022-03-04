@@ -11,6 +11,7 @@
   src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
   font-display: swap;
 }
+
 @font-face {
   font-family: "Rubik";
   font-style: normal;
@@ -18,6 +19,7 @@
   src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
   font-display: swap;
 }
+
 @font-face {
   font-family: "Rubik";
   font-style: normal;
@@ -25,6 +27,7 @@
   src: url("../fonts/rubik/rubik-800.woff2") format("woff2");
   font-display: swap;
 }
+
 @font-face {
   font-family: "raleway";
   font-style: normal;
@@ -68,7 +71,7 @@
   cursor: pointer;
 }
 
-.button:hover:before {
+.button:hover::before {
   opacity: 0;
 }
 
@@ -86,7 +89,7 @@
 
 .link-uppercase {
   display: block;
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -125,6 +128,7 @@ body {
 .logo-header:hover {
   opacity: 0.6;
 }
+
 .logo-header:active {
   opacity: 0.3;
 }
@@ -204,8 +208,7 @@ body {
   border-top: 2px solid #000000;
   border-bottom: 2px solid #000000;
   border-right: none;
-  box-sizing: border-box;
-  border-radius: 50px 0px 0px 50px;
+  border-radius: 50px 0 0 50px;
   background: transparent;
   cursor: pointer;
   font-size: 16px;
@@ -213,7 +216,7 @@ body {
 }
 
 .search-field::placeholder {
-  font-family: Rubik;
+  font-family: "Rubik", sans-serif;
   font-size: 16px;
   line-height: 20px;
   display: flex;
@@ -224,11 +227,11 @@ body {
 
 .search-btn {
   width: 160px;
-  border-radius: 0px 50px 50px 0px;
+  border-radius: 0 50px 50px 0;
   background: transparent;
   font-size: 16px;
   line-height: 20px;
-  border: solid 2px black;
+  border: solid 2px #000000;
   color: #000000;
   outline: none;
 }
@@ -458,7 +461,7 @@ body {
 }
 
 .popover-button span {
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -534,7 +537,7 @@ body {
   position: absolute;
   width: 16px;
   height: 2px;
-  background: black;
+  background: #000000;
   top: 22px;
   left: 15px;
   margin: auto;
@@ -546,7 +549,7 @@ body {
   position: absolute;
   width: 16px;
   height: 2px;
-  background: black;
+  background: #000000;
   top: 22px;
   left: 15px;
   transform: rotate(90deg);
@@ -606,7 +609,7 @@ body {
   position: relative;
 }
 
-.catalog-group-link:hover:before {
+.catalog-group-link:hover::before {
   content: "";
   display: block;
   position: absolute;
@@ -706,7 +709,7 @@ body {
 }
 
 .slider-back {
-  background-image: url(../img/arrow/back.svg);
+  background-image: url("../img/arrow/back.svg");
   width: 20px;
   height: 60px;
   border: none;
@@ -714,7 +717,7 @@ body {
 }
 
 .slider-next {
-  background-image: url(../img/arrow/forward.svg);
+  background-image: url("../img/arrow/forward.svg");
   width: 20px;
   height: 60px;
   border: none;
@@ -1771,6 +1774,7 @@ body {
   padding: 0;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .breadcrumbs-item {
