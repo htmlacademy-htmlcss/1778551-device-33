@@ -2229,6 +2229,16 @@ body {
   opacity: 1;
 }
 
+.lable-min {
+  position: absolute;
+  left: -13px;
+}
+
+.lable-max {
+  position: absolute;
+  left: 85px;
+}
+
 .range-input:focus {
   outline: none;
 }
