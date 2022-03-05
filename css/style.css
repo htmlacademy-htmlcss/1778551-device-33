@@ -5,6 +5,20 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 * {
   list-style: none;
   text-decoration: none;
@@ -115,8 +129,8 @@ html {
 }
 
 body {
-  width: 1440px;
-  margin: 0 auto;
+  min-width: 1160px;
+  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1118,9 +1132,14 @@ body {
 }
 
 .category-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 160px 40px 160px 40px 160px 40px 160px 40px 160px 40px 160px;
+  grid-template-columns: repeat(6, 160px);
+  -webkit-column-gap: 40px;
+  -moz-column-gap: 40px;
+  column-gap: 40px;
+  row-gap: 20px;
   padding: 37px 0 0 0;
   list-style: none;
   margin: 0;
@@ -1137,11 +1156,8 @@ body {
   opacity: 0.3;
 }
 
-.category-item:not(:last-child) {
-  margin-right: 40px;
-}
-
 .category-desk-title {
+  max-width: 160px;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -1648,7 +1664,6 @@ body {
   border-right: none;
   width: 557px;
   padding: 0 0 0 17px;
-  position: relative;
 }
 
 .subscription-form::after {
