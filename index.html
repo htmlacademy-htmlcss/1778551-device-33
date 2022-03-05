@@ -3,12 +3,6 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="./img/favicon/favicon.ico" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./img/favicon/favicon.png"
-    />
     <link rel="stylesheet" href="css/style.css" />
     <title>HTML Academy: Девайс</title>
   </head>
@@ -144,7 +138,7 @@
             </ul>
           </div>
           <nav class="nav-page">
-            <div class="nav-catalog">
+            <div class="nav-catalog" tabindex="0">
               <a class="nav-page__link link-uppercase" href="catalog.html">
                 каталог товаров
               </a>
@@ -525,8 +519,9 @@
               class="subscription-mail"
               type="email"
               placeholder="Ваш e-mail"
+              required
             />
-            <button class="subscription-btn link-uppercase" type="button">
+            <button class="subscription-btn link-uppercase" type="submit">
               Подписаться
             </button>
             <span class="mailing-decor">Это бесплатно</span>
@@ -632,6 +627,7 @@
                   type="text"
                   name="auth-login"
                   placeholder="Введите имя"
+                  required
                 />
                 <img
                   class="name-icon"
@@ -651,6 +647,7 @@
                   type="email"
                   name="auth-login"
                   placeholder="почта"
+                  required
                 />
                 <img
                   class="email-icon"
@@ -671,6 +668,7 @@
                     type="text"
                     name="product"
                     placeholder="В свободной форме"
+                    required
                   />
                 </label>
               </span>
@@ -691,6 +689,7 @@
                       viewBox="0 0 4 12"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
+                      role="img"
                     >
                       <path d="M3 0H1V2H3V0Z" fill="black" />
                       <path d="M3 4H1V12H3V4Z" fill="black" />
