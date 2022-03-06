@@ -10,6 +10,7 @@
       sizes="32x32"
       href="./img/favicon/favicon.png"
     />
+    <link rel="icon" href="./img/favicon/favicon.ico" />
     <link rel="stylesheet" href="css/style.css" />
     <title>HTML Academy: Девайс-Каталог</title>
   </head>
@@ -145,70 +146,64 @@
               </li>
             </ul>
           </div>
-          <div class="page-nav-container catalog-index">
-            <nav class="nav-page">
-              <div class="nav-catalog">
-                <a class="nav-page__link link-uppercase" href="catalog.html">
-                  каталог товаров
-                </a>
-                <button
-                  class="btn-catalog"
-                  type="button"
-                  tabindex="-1"
-                ></button>
-                <div class="catalog-group">
-                  <h2 class="visually-hidden">Категории товаров</h2>
-                  <div class="catalog-group-inner">
-                    <ul class="other-list">
-                      <li class="catalog-group-item">
-                        <a class="catalog-group-link" href="#"
-                          >Виртуальная реальность
-                        </a>
-                      </li>
-                      <li class="catalog-group-item">
-                        <a class="catalog-group-link" href="#"
-                          >Моноподы для cелфи
-                        </a>
-                      </li>
-                      <li class="catalog-group-item">
-                        <a class="catalog-group-link" href="#">Экшн-камеры</a>
-                      </li>
-                    </ul>
-                    <ul class="clock-list">
-                      <li class="catalog-group-item">
-                        <a class="catalog-group-link" href="catalog.html"
-                          >Фитнес-браслеты</a
-                        >
-                      </li>
-                      <li class="catalog-group-item">
-                        <a class="catalog-group-link" href="catalog.html"
-                          >Умные часы</a
-                        >
-                      </li>
-                    </ul>
-                    <ul class="quadcopters-list">
-                      <li class="catalog-group-item">
-                        <a class="catalog-group-link" href="catalog.html"
-                          >Фитнес-браслеты
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
+          <nav class="nav-page-catalog">
+            <div class="nav-catalog" tabindex="0">
+              <a class="nav-page__link link-uppercase" href="catalog.html">
+                каталог товаров
+              </a>
+              <button class="btn-catalog" type="button" tabindex="-1"></button>
+              <div class="catalog-group">
+                <h2 class="visually-hidden">Категории товаров</h2>
+                <div class="catalog-group-inner">
+                  <ul class="other-list">
+                    <li class="catalog-group-item">
+                      <a class="catalog-group-link" href="#"
+                        >Виртуальная реальность
+                      </a>
+                    </li>
+                    <li class="catalog-group-item">
+                      <a class="catalog-group-link" href="#"
+                        >Моноподы для cелфи
+                      </a>
+                    </li>
+                    <li class="catalog-group-item">
+                      <a class="catalog-group-link" href="#">Экшн-камеры</a>
+                    </li>
+                  </ul>
+                  <ul class="clock-list">
+                    <li class="catalog-group-item">
+                      <a class="catalog-group-link" href="catalog.html"
+                        >Фитнес-браслеты</a
+                      >
+                    </li>
+                    <li class="catalog-group-item">
+                      <a class="catalog-group-link" href="catalog.html"
+                        >Умные часы</a
+                      >
+                    </li>
+                  </ul>
+                  <ul class="quadcopters-list">
+                    <li class="catalog-group-item">
+                      <a class="catalog-group-link" href="catalog.html"
+                        >Фитнес-браслеты
+                      </a>
+                    </li>
+                  </ul>
                 </div>
               </div>
-              <ul class="nav-page__list">
-                <li class="nav-page__item">
-                  <a class="nav-page__link link-uppercase" href="#">доставка</a>
-                </li>
-                <li class="nav-page__item">
-                  <a class="nav-page__link link-uppercase" href="#">гарантия</a>
-                </li>
-                <li class="nav-page__item">
-                  <a class="nav-page__link link-uppercase" href="#">контакты</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+            </div>
+            <ul class="nav-page__list">
+              <li class="nav-page__item-catalog" tabindex="0">
+                <a class="nav-page__link link-uppercase" href="#">доставка</a>
+              </li>
+              <li class="nav-page__item-catalog" tabindex="0">
+                <a class="nav-page__link link-uppercase" href="#">гарантия</a>
+              </li>
+              <li class="nav-page__item-catalog" tabindex="0">
+                <a class="nav-page__link link-uppercase" href="#">контакты</a>
+              </li>
+            </ul>
+          </nav>
         </section>
       </div>
     </header>
@@ -242,19 +237,19 @@
                 <div class="range-scale">
                   <div class="range-bar" style="left: 0px; width: 118px">
                     <button class="range-toggle toggle-min">
-                      <span class="visually-hidden"
-                        >Изменить минимальную цену.</span
-                      >
+                      <span class="visually-hidden">
+                        Изменить минимальную цену.
+                      </span>
                     </button>
                     <button class="range-toggle toggle-max">
-                      <span class="visually-hidden"
-                        >Изменить максимальную цену.</span
-                      >
+                      <span class="visually-hidden">
+                        Изменить максимальную цену.
+                      </span>
                     </button>
                   </div>
                 </div>
                 <div class="range-wrapper-inputs">
-                  <label class="catalog-filter-label">
+                  <label class="catalog-filter-label lable-min">
                     от
                     <input
                       class="range-input"
@@ -263,7 +258,7 @@
                       name="min-price"
                     />
                   </label>
-                  <label class="catalog-filter-label">
+                  <label class="catalog-filter-label lable-max">
                     до
                     <input
                       class="range-input"

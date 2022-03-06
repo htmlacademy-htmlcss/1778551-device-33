@@ -83,7 +83,7 @@
                         alt="Сравнить"
                       />Корзина
                     </a>
-                    <div class="popover">
+                    <div class="popover" aria-label="popover">
                       <ul class="popover-list">
                         <li class="popover-item">
                           <a class="popover-content" href="catalog.html">
@@ -144,7 +144,7 @@
             </ul>
           </div>
           <nav class="nav-page">
-            <div class="nav-catalog">
+            <div class="nav-catalog" tabindex="0">
               <a class="nav-page__link link-uppercase" href="catalog.html">
                 каталог товаров
               </a>
@@ -525,8 +525,9 @@
               class="subscription-mail"
               type="email"
               placeholder="Ваш e-mail"
+              required
             />
-            <button class="subscription-btn link-uppercase" type="button">
+            <button class="subscription-btn link-uppercase" type="submit">
               Подписаться
             </button>
             <span class="mailing-decor">Это бесплатно</span>
@@ -632,6 +633,7 @@
                   type="text"
                   name="auth-login"
                   placeholder="Введите имя"
+                  required
                 />
                 <img
                   class="name-icon"
@@ -651,6 +653,7 @@
                   type="email"
                   name="auth-login"
                   placeholder="почта"
+                  required
                 />
                 <img
                   class="email-icon"
@@ -671,6 +674,7 @@
                     type="text"
                     name="product"
                     placeholder="В свободной форме"
+                    required
                   />
                 </label>
               </span>
@@ -691,6 +695,7 @@
                       viewBox="0 0 4 12"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
+                      role="img"
                     >
                       <path d="M3 0H1V2H3V0Z" fill="black" />
                       <path d="M3 4H1V12H3V4Z" fill="black" />
@@ -707,7 +712,7 @@
                   <button class="togle-btn togle-minuse" type="button">
                     <span class="visually-hidden">Меньше</span>
                   </button>
-                  <span class="counter-product">1</span>
+                  <input class="counter-product" type="text"></input>
                   <button class="togle-btn togle-pluse" type="button">
                     <span class="visually-hidden">Больше</span>
                   </button>
