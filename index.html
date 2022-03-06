@@ -3,6 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="./img/favicon/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon/favicon.png"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>HTML Academy: Девайс</title>
   </head>
@@ -77,7 +83,7 @@
                         alt="Сравнить"
                       />Корзина
                     </a>
-                    <div class="popover">
+                    <div class="popover" aria-label="popover">
                       <ul class="popover-list">
                         <li class="popover-item">
                           <a class="popover-content" href="catalog.html">
@@ -706,7 +712,7 @@
                   <button class="togle-btn togle-minuse" type="button">
                     <span class="visually-hidden">Меньше</span>
                   </button>
-                  <span class="counter-product">1</span>
+                  <input class="counter-product" type="text"></input>
                   <button class="togle-btn togle-pluse" type="button">
                     <span class="visually-hidden">Больше</span>
                   </button>
